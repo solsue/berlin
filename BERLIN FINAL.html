@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Berlín">
+<meta name="theme-color" content="#060606">
+<title>Berlín — Guía completa offline</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;background:#060606;color:#ddd;font-family:Georgia,serif;overscroll-behavior:none}
+::-webkit-scrollbar{display:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+a{color:inherit;text-decoration:none}
+
+/* LAYOUT */
+#app{max-width:480px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column}
+#topbar{background:#080808;border-bottom:1px solid #181818;padding:14px 20px 12px;padding-top:calc(14px + env(safe-area-inset-top));position:sticky;top:0;z-index:50}
+.logo-row{display:flex;align-items:baseline;gap:10px}
+.t-title{font-size:24px;font-family:'Playfair Display',Georgia,serif;color:#E8C547;font-weight:700;letter-spacing:-.03em}
+.t-sub{font-size:10px;color:#3a3a3a;font-family:'Space Mono',monospace;letter-spacing:.15em}
+#content{flex:1;overflow-y:auto;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+#bottomnav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;z-index:100;background:#080808;border-top:1px solid #1a1a1a;display:flex;padding-bottom:env(safe-area-inset-bottom)}
+.tb{flex:1;padding:9px 0 11px;display:flex;flex-direction:column;align-items:center;gap:2px;color:#444;transition:color .2s}
+.tb.on{color:#E8C547}
+.ti{font-size:18px;line-height:1}
+.tl{font-size:9px;font-family:'Space Mono',monospace;letter-spacing:.06em;text-transform:uppercase}
+.tab{display:none;padding:14px 14px 0}
+.tab.on{display:block}
+
+/* CARDS */
+.card{background:#0c0c0c;border:1px solid #181818;border-radius:14px;margin-bottom:10px;overflow:hidden}
+.ch{width:100%;padding:14px 16px;display:flex;align-items:center;gap:12px;text-align:left;transition:background .15s}
+.ch:active{background:#101010}
+.cb{background:#0a0a0a;padding:0 16px 16px}
+
+/* TIMELINE */
+.sr{display:flex;gap:12px;padding-top:14px}
+.sc{display:flex;flex-direction:column;align-items:center;width:40px;flex-shrink:0}
+.st{font-size:9px;font-family:'Space Mono',monospace;white-space:nowrap;margin-bottom:4px;letter-spacing:.05em}
+.sl{width:1px;flex:1;background:#1c1c1c;margin-top:4px}
+.sn{font-size:14px;font-weight:600;font-family:'Playfair Display',Georgia,serif;color:#e8e8e8;line-height:1.3}
+.sa{font-size:10.5px;color:#484848;font-family:'Space Mono',monospace;margin-bottom:5px;margin-top:2px}
+.sno{font-size:12px;color:#888;line-height:1.65}
+.sh{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:2px}
+.mb{flex-shrink:0;font-size:9.5px;font-family:'Space Mono',monospace;border-radius:5px;padding:3px 7px;text-decoration:none;white-space:nowrap;display:inline-block;transition:opacity .2s}
+.mb:active{opacity:.6}
+
+/* NEIGHBORHOOD LIST */
+.nc{width:100%;text-align:left;background:#0c0c0c;border:1px solid #181818;border-radius:12px;padding:14px 16px;margin-bottom:9px;display:flex;align-items:center;gap:14px;transition:background .15s}
+.nc:active{background:#111}
+.na{width:3px;height:44px;border-radius:2px;flex-shrink:0}
+
+/* NEIGHBORHOOD DETAIL */
+#nd{display:none}
+#nd.on{display:block}
+#nl.hid{display:none}
+.ndh{background:#090909;border-bottom:1px solid #181818;padding:13px 16px;display:flex;align-items:center;gap:12px;position:sticky;top:57px;z-index:40}
+.bk{font-size:26px;padding:0;line-height:1}
+.vb{background:#0e0e0e;border-radius:10px;padding:13px 14px;margin-bottom:12px;border-left-width:3px;border-left-style:solid}
+.cb2{background:#0c0c0c;border-radius:10px;padding:13px 14px;margin-bottom:12px;border:1px solid #181818}
+.gb{background:#0c0c0c;border-radius:10px;padding:13px 14px;margin-bottom:14px;border-width:1px;border-style:solid}
+.sl2{font-size:9px;font-family:'Space Mono',monospace;letter-spacing:.1em;margin-bottom:6px}
+.stabs{display:flex;gap:6px;margin-bottom:14px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.stab{flex-shrink:0;padding:5px 13px;border-radius:20px;font-size:11px;font-family:'Space Mono',monospace;white-space:nowrap;border:1px solid #222;background:transparent;color:#555;transition:all .2s}
+.ic{background:#0c0c0c;border-radius:10px;padding:12px 14px;border:1px solid #181818;margin-bottom:9px}
+.ih{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:3px}
+.in{font-size:14px;font-family:'Playfair Display',Georgia,serif;color:#e8e8e8;flex:1;line-height:1.3}
+.im{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.is{font-size:10.5px;font-family:'Space Mono',monospace}
+.ia{font-size:10.5px;color:#484848;font-family:'Space Mono',monospace;margin-bottom:5px}
+.id{font-size:12px;color:#888;line-height:1.65}
+
+/* PHRASES */
+.pc{width:100%;text-align:left;border:1px solid #181818;border-radius:12px;padding:14px 16px;margin-bottom:9px;background:#0c0c0c;transition:background .15s}
+.pc.fl{background:#101010}
+.px{font-size:9px;color:#E8C547;font-family:'Space Mono',monospace;letter-spacing:.1em;margin-bottom:7px}
+.pd{font-size:15px;color:#e8e8e8;font-family:'Playfair Display',Georgia,serif;line-height:1.5;font-style:italic}
+.pt{font-size:12.5px;color:#888;border-top:1px solid #1e1e1e;padding-top:9px;margin-top:9px;line-height:1.6}
+.ph{font-size:9.5px;color:#333;font-family:'Space Mono',monospace;margin-top:8px}
+
+/* CHECKLIST */
+.ci{background:#0c0c0c;border-radius:10px;padding:12px 14px;margin-bottom:8px;border:1px solid #181818;display:flex;gap:12px;align-items:flex-start;transition:all .2s}
+.ci.dn{background:#0c150c;border-color:#1a2e1a}
+.cb3{width:22px;height:22px;border-radius:6px;border:2px solid #2a2a2a;background:transparent;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;transition:all .2s;cursor:pointer}
+.cb3.dn{background:#3d6e3d;border-color:#3d6e3d}
+.ri{background:#0c150c;border:1px solid #1a2e1a;border-radius:10px;padding:12px 14px;margin-bottom:8px;display:flex;gap:12px;align-items:center}
+.ib{background:#0c0c0c;border-radius:10px;padding:14px;border:1px solid #181818;margin-top:8px}
+.idv{margin-top:11px;padding-top:11px;border-top:1px solid #1a1a1a}
+.hotel{background:#0c0c0c;border:1px solid #1e1a0a;border-radius:12px;padding:13px 16px;margin-bottom:16px}
+.sec-lbl{font-size:9px;color:#555;font-family:'Space Mono',monospace;letter-spacing:.12em;margin-bottom:10px}
+
+/* MAP */
+#tab-map{padding:0!important}
+#map-wrap{position:relative;height:calc(100svh - 57px - 52px - env(safe-area-inset-bottom) - env(safe-area-inset-top));width:100%}
+#map{height:100%;width:100%;background:#111}
+#map-filters{position:absolute;top:10px;left:0;right:0;z-index:1000;display:flex;gap:6px;padding:0 10px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+#map-filters::-webkit-scrollbar{display:none}
+.mf{flex-shrink:0;padding:5px 12px;border-radius:20px;font-size:11px;font-family:'Space Mono',monospace;white-space:nowrap;border:1px solid #333;background:#0a0a0add;color:#666;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);cursor:pointer;transition:all .2s}
+.mf.on{border-color:#E8C547;background:#E8C54722;color:#E8C547}
+/* Leaflet dark theme */
+.leaflet-container{background:#111!important}
+.leaflet-tile-pane{filter:brightness(.75) saturate(.5) invert(1) hue-rotate(180deg)}
+.leaflet-popup-content-wrapper{background:#111;border:1px solid #2a2a2a;border-radius:12px;box-shadow:0 8px 32px #000c;color:#ddd;padding:0;overflow:hidden}
+.leaflet-popup-content{margin:0;padding:0;width:auto!important}
+.leaflet-popup-tip-container{display:none}
+.leaflet-popup-close-button{color:#555!important;font-size:20px!important;top:8px!important;right:10px!important;z-index:10}
+.leaflet-control-zoom{border:1px solid #222!important;border-radius:8px!important;overflow:hidden}
+.leaflet-control-zoom a{background:#111!important;color:#666!important;border-color:#222!important;line-height:28px!important;width:28px!important;height:28px!important}
+.leaflet-control-zoom a:hover{background:#1a1a1a!important;color:#E8C547!important}
+.leaflet-control-attribution{background:#0a0a0a99!important;color:#2a2a2a!important;font-size:8px!important}
+.leaflet-control-attribution a{color:#333!important}
+/* Popup content */
+.mpop{padding:13px 16px 13px 14px;min-width:190px;max-width:250px}
+.mpop-bar{height:3px;border-radius:0;margin:-13px -16px 11px -14px}
+.mpop-cat{font-size:8px;letter-spacing:.14em;font-family:'Space Mono',monospace;margin-bottom:5px;opacity:.8}
+.mpop-name{font-size:13.5px;font-family:'Playfair Display',Georgia,serif;color:#e8e8e8;line-height:1.3;margin-bottom:3px;padding-right:20px}
+.mpop-addr{font-size:9.5px;color:#484848;font-family:'Space Mono',monospace;margin-bottom:7px}
+.mpop-note{font-size:11px;color:#888;line-height:1.6;margin-bottom:9px}
+.mpop-btn{display:inline-block;font-size:9px;font-family:'Space Mono',monospace;padding:4px 10px;border-radius:5px;border:1px solid;text-decoration:none;transition:opacity .2s}
+.mpop-btn:active{opacity:.6}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="topbar">
+    <div class="logo-row">
+      <svg width="28" height="28" viewBox="0 0 100 100" style="flex-shrink:0;margin-right:2px"><rect width="100" height="100" rx="22" fill="#E8C547"/><circle cx="28" cy="25" r="13" fill="#c9a030"/><circle cx="72" cy="25" r="13" fill="#c9a030"/><circle cx="28" cy="25" r="7" fill="#b08820"/><circle cx="72" cy="25" r="7" fill="#b08820"/><ellipse cx="50" cy="56" rx="30" ry="28" fill="#c9a030"/><ellipse cx="50" cy="65" rx="14" ry="10" fill="#b08820"/><ellipse cx="50" cy="60" rx="5" ry="3.5" fill="#0a0000"/><path d="M44 66 Q50 71 56 66" stroke="#0a0000" stroke-width="1.8" fill="none" stroke-linecap="round"/><circle cx="39" cy="48" r="5.5" fill="#0a0000"/><circle cx="61" cy="48" r="5.5" fill="#0a0000"/><circle cx="40.5" cy="46.5" r="2" fill="white"/><circle cx="62.5" cy="46.5" r="2" fill="white"/><rect x="22" y="78" width="56" height="7" rx="3.5" fill="#C8402A"/></svg>
+      <span class="t-title">Berlin</span>
+      <span class="t-sub">8–12 JUL · OFFLINE</span>
+    </div>
+  </div>
+
+  <div id="content">
+    <div id="tab-itinerary" class="tab on">
+      <div class="hotel">
+        <div style="font-size:9px;color:#E8C547;font-family:'Space Mono',monospace;letter-spacing:.1em;margin-bottom:5px">🏨 BASE</div>
+        <div style="font-size:13.5px;color:#ccc;line-height:1.7">Hotel Kastanienhof · Kastanienallee 65, Prenzlauer Berg<br><span style="color:#555;font-size:11px">🚂 Tren a Múnich 13 Jul 7:20h → salir hotel ~6:00h · Estación Berlin Hbf</span></div>
+      </div>
+      <div id="days"></div>
+    </div>
+
+    <div id="tab-neighborhoods" class="tab">
+      <div id="nl">
+        <p style="font-size:11px;color:#484848;font-family:'Space Mono',monospace;margin-bottom:14px;line-height:1.8">Tocá un barrio para ver calles, cafés, restaurantes, tiendas y atracciones con links a Maps.</p>
+        <div id="nc"></div>
+      </div>
+      <div id="nd"></div>
+    </div>
+
+    <div id="tab-map" class="tab">
+      <div id="map-wrap">
+        <div id="map"></div>
+        <div id="map-filters">
+          <button class="mf on" data-filter="all" onclick="setFilter('all')">Todos</button>
+          <button class="mf" data-filter="itinerary" onclick="setFilter('itinerary')">📅 Itinerario</button>
+          <button class="mf" data-filter="eat" onclick="setFilter('eat')">🍽️ Comer</button>
+          <button class="mf" data-filter="cafe" onclick="setFilter('cafe')">☕ Cafés</button>
+          <button class="mf" data-filter="sight" onclick="setFilter('sight')">👁️ Ver</button>
+          <button class="mf" data-filter="shop" onclick="setFilter('shop')">🛍️ Tiendas</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab-phrases" class="tab">
+      <p style="font-size:11px;color:#484848;font-family:'Space Mono',monospace;margin-bottom:14px;line-height:1.8">Tocá cada tarjeta para ver la traducción. Desafío para tu hijo: decir la frase antes de mirar.</p>
+      <div id="pc"></div>
+    </div>
+
+    <div id="tab-checklist" class="tab">
+      <div id="cc"></div>
+    </div>
+
+    <div id="tab-transport" class="tab">
+      <div id="tp"></div>
+    </div>
+  </div>
+
+  <nav id="bottomnav">
+    <button class="tb on" data-tab="itinerary"><span class="ti">📅</span><span class="tl">Días</span></button>
+    <button class="tb" data-tab="neighborhoods"><span class="ti">🗺️</span><span class="tl">Barrios</span></button>
+    <button class="tb" data-tab="map"><span class="ti">📍</span><span class="tl">Mapa</span></button>
+    <button class="tb" data-tab="transport"><span class="ti">🚇</span><span class="tl">Rutas</span></button>
+    <button class="tb" data-tab="phrases"><span class="ti">🗣️</span><span class="tl">Alemán</span></button>
+    <button class="tb" data-tab="checklist"><span class="ti">✅</span><span class="tl">Reservas</span></button>
+  </nav>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const G=(q)=>`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+
+// ── DAYS ──────────────────────────────────────────────────────────────────────
+const DAYS=[
+  {id:1,date:"Mar 8 Jul",title:"Llegada · Alexanderplatz · Nikolaiviertel · Futurium",emoji:"✈️",color:"#E8C547",stops:[
+    {time:"12:55",type:"✈️",place:"Aterrizaje BER — Ryanair FR 2528",address:"Aeropuerto BER, Terminal 1",note:"Llegada desde Madrid. Inmigración + equipaje: calculá 30-45 min.",map:G("Berlin Brandenburg Airport BER")},
+    {time:"14:00",type:"🚇",place:"BER → Hotel · S9 + S41 + Tram M1",address:"Estación BER Terminal 1-2",note:"🚇 S9 → Ostkreuz (22 min) → S41/S42 → Schönhauser Allee (12 min) → Tram M1 → Kastanienallee (8 min). Total ~55 min. Alternativa: taxi directo ~35 min, ~45€.",map:G("BER Airport S-Bahn Berlin")},
+    {time:"15:00",type:"🏨",place:"Hotel Kastanienhof — check in",address:"Kastanienallee 65, Prenzlauer Berg",note:"Dejás valijas. El tram M1 sale de la puerta del hotel.",map:G("Hotel Kastanienhof Kastanienallee 65 Berlin")},
+    {time:"15:30",type:"🚶",place:"Kastanienallee + Kollwitzplatz",address:"Prenzlauer Berg",note:"🚶 5 min caminando desde el hotel. Primera caminata por tu barrio base. Que tu hijo lea carteles y menús en alemán.",map:G("Kastanienallee Prenzlauer Berg Berlin")},
+    {time:"16:30",type:"👁️",place:"Alexanderplatz — Weltzeituhr",address:"Alexanderplatz, Mitte",note:"🚋 Tram M1 → Alexanderplatz (15 min). El reloj mundial soviético de 1969. Primera imagen icónica de Berlín.",map:G("Weltzeituhr Alexanderplatz Berlin")},
+    {time:"17:00",type:"🚶",place:"Caminata Alexanderplatz → Spree → Nikolaiviertel",address:"Orillas del Spree, Mitte",note:"🚶 15 min caminando siguiendo el Spree hacia el oeste. Una de las caminatas más bonitas del centro histórico.",map:G("Nikolaiviertel Berlin Nikolaikirchplatz")},
+    {time:"17:30",type:"👁️",place:"Nikolaiviertel",address:"Nikolaikirchplatz, Mitte",note:"El barrio más antiguo de Berlín, siglo XIII. Adoquines medievales, la Nikolaikirche y vistas al Spree. Menú de Mutter Hoppe en alemán — desafío para tu hijo.",map:G("Nikolaiviertel Berlin Nikolaikirchplatz")},
+    {time:"18:15",type:"🚶",place:"Spree → Futurium",address:"Alexanderufer 2, Mitte",note:"🚶 15 min caminando junto al río desde Nikolaiviertel.",map:G("Futurium Berlin Alexanderufer 2")},
+    {time:"18:30",type:"👁️",place:"Futurium",address:"Alexanderufer 2, Mitte",note:"GRATIS. Museo interactivo sobre el futuro: tecnología, sostenibilidad, clima. Exposición Ocean Futures en julio. Laboratorio interactivo en el sótano — tu hijo lo va a flipar. Skywalk con vistas de Berlín. Abre hasta las 20h. Calculá 1h.",map:G("Futurium Berlin Alexanderufer 2")},
+    {time:"21:00",type:"🍜",place:"Fukagawa Ramen — cena",address:"Wörther Str. 22, Prenzlauer Berg",note:"🚋 U2 → Senefelderplatz + 🚶 5 min. Ramen japonés auténtico de alto nivel. Tonkotsu, A5-Wagyu y trufa. Abre 18-23h. Reservar.",map:G("Fukagawa Ramen Wörther Strasse 22 Berlin Prenzlauer Berg")},
+  ]},
+  {id:2,date:"Mié 9 Jul",title:"Mitte · Museumsinsel · East Side Gallery",emoji:"🏛️",color:"#C8402A",stops:[
+    {time:"09:00",type:"☕",place:"ACID Mitte — desayuno",address:"Rosenthaler Str. 9, Mitte",note:"🚋 Tram M1 desde el hotel → Rosenthaler Platz (12 min). Cardamom bun y Babka legendarios. Abre a las 8h.",map:G("ACID Mitte Rosenthaler Strasse 9 Berlin")},
+    {time:"10:00",type:"🏛️",place:"Neues Museum — Nefertiti",address:"Bodestrasse 1-3, Mitte",note:"🚶 12 min caminando desde ACID Mitte. ✅ ENTRADA RESERVADA (gratis, entrada por James-Simon-Galerie). Ir directo a Sala 2.10 (primera planta) por Nefertiti antes de que se llene. Después: Oro de Schliemann, momias egipcias, Hombre de Neanderthal. Cafetería del patio interior excelente. Máximo 1,5h.",map:G("Neues Museum Berlin Bodestrasse")},
+    {time:"12:00",type:"🚶",place:"Paseo Isla de los Museos + orillas del Spree",address:"Museumsinsel, Mitte",note:"🚶 5 min caminando desde el Neues Museum. Exterior de los museos y orillas del Spree.",map:G("Museumsinsel Berlin")},
+    {time:"13:00",type:"🍽️",place:"Almuerzo — Hackesche Höfe",address:"Rosenthaler Str. 40, Mitte",note:"🚶 8 min caminando desde la Museumsinsel. 8 patios art nouveau con docenas de opciones para comer.",map:G("Hackesche Höfe Rosenthaler Strasse Berlin")},
+    {time:"14:30",type:"👁️",place:"Unter den Linden → Puerta de Brandeburgo",address:"Unter den Linden, Mitte",note:"🚶 15 min caminando desde los Hackesche Höfe. El gran bulevar histórico. Que tu hijo lea las inscripciones en alemán.",map:G("Brandenburger Tor Pariser Platz Berlin")},
+    {time:"17:30",type:"👁️",place:"East Side Gallery",address:"Mühlenstrasse, Friedrichshain",note:"🚇 S1/S2 desde Brandenburger Tor → Ostbahnhof (18 min) + 🚶 10 min. GRATIS 24h. 1,3 km del Muro con murales de 21 países. Buscar el beso Honecker-Brezhnev.",map:G("East Side Gallery Berlin")},
+    {time:"19:00",type:"🍺",place:"Holzmarkt 25",address:"Holzmarktstrasse 25, Friedrichshain",note:"🚶 5 min caminando desde East Side Gallery. Villa cooperativa a orillas del Spree. Bares, música en vivo, ambiente. Entrada gratis.",map:G("Holzmarkt 25 Berlin")},
+    {time:"21:00",type:"🍽️",place:"Cena — Friedrichshain",address:"Friedrichshain",note:"A definir. Opciones: A Mano (Strausberger Pl. 2, italiano sofisticado 4.8★) o Golden Fleece (Mainzer Str. 20, georgiano 4.7★).",map:G("A Mano restaurant Strausberger Platz Berlin")},
+  ]},
+  {id:3,date:"Vie 10 Jul",title:"Neukölln · Kreuzberg · Marina Abramović · Friedrichshain",emoji:"🎨",color:"#3A6B8A",stops:[
+    {time:"10:00",type:"☕",place:"Neukölln — desayuno en Reuterkiez",address:"Neukölln, Berlin",note:"🚋 Tram M1 → Rosenthaler Platz → U8 dirección Hermannstr. → Boddinstr. (35 min). Opciones: Nah am Wasser Gebaut (Kiehlufer 55, junto al canal — zumos frescos, quiches, falafel bowl, desayuno de todo el día) · Two Planets (Hermannstr. 230) · Myxa Berlin (Lenaustr. 22).",map:G("Nah am Wasser Gebaut Kiehlufer 55 Berlin Neukölln")},
+    {time:"11:30",type:"🛍️",place:"Mercado Turco — Paul-Lincke-Ufer",address:"Maybachufer, Kreuzberg",note:"🚶 15 min caminando desde Reuterkiez. Viernes: especias, aceitunas, quesos. El mercado más auténtico de Berlín.",map:G("Türkenmarkt Maybachufer Berlin")},
+    {time:"13:00",type:"🍽️",place:"Mustafa's Gemüse Kebap",address:"Mehringdamm 33, Kreuzberg",note:"🚶 12 min caminando desde el Mercado Turco. El döner más famoso de Berlín. Cola larga — ir con tiempo.",map:G("Mustafa's Gemüse Kebap Mehringdamm 33 Berlin")},
+    {time:"14:00",type:"👁️",place:"Checkpoint Charlie",address:"Friedrichstrasse 43-45, Kreuzberg",note:"🚶 8 min caminando desde Mustafa's. El paso fronterizo más famoso de la Guerra Fría. GRATIS 24h.",map:G("Checkpoint Charlie Friedrichstrasse Berlin")},
+    {time:"15:00",type:"⭐",place:"Gropius Bau — Marina Abramović",address:"Niederkirchnerstr. 7, Kreuzberg",note:"🚶 5 min caminando desde Checkpoint Charlie. ⭐ ENTRADA RESERVADA 3:00pm. Llegar 10 min antes. Arte que se vive en silencio y presencia.",map:G("Gropius Bau Niederkirchnerstrasse 7 Berlin")},
+    {time:"18:00",type:"👁️",place:"Karl-Marx-Allee",address:"Strausberger Platz, Friedrichshain",note:"🚇 U2 desde Stadtmitte → Strausberger Platz (10 min). El bulevar estalinista más imponente de Europa. 90 metros de ancho. Caminar desde Strausberger Platz hasta Frankfurter Tor.",map:G("Karl-Marx-Allee Strausberger Platz Berlin")},
+    {time:"19:00",type:"👁️",place:"RAW-Gelände",address:"Revaler Str. 99, Friedrichshain",note:"🚶 15 min caminando desde Karl-Marx-Allee. Skatepark, murales, bares underground. Urban Spree y Cassiopeia dentro.",map:G("RAW-Gelände Revaler Strasse 99 Friedrichshain Berlin")},
+    {time:"21:00",type:"🍽️",place:"Cena — Café Datscha",address:"Gabriel-Max-Str. 1, Friedrichshain",note:"🚶 10 min caminando desde RAW-Gelände. Cocina rusa y del este europeo auténtica. Borscht, pelmeni. Perfecto después de caminar la Karl-Marx-Allee.",map:G("Café Datscha Gabriel-Max-Strasse 1 Friedrichshain Berlin")},
+  ]},
+  {id:4,date:"Sáb 11 Jul",title:"Young Engineers · Zoo · Charlottenburg",emoji:"🐘",color:"#4A7C59",stops:[
+    {time:"08:45",type:"☕",place:"Desayuno express — Bäckerei",address:"Kastanienallee, Prenzlauer Berg",note:"🚶 2 min del hotel. Chestnut Coffee (Kastanienallee 79) o cualquier Bäckerei. Salir puntual.",map:G("Chestnut Coffee Kastanienallee 79 Berlin")},
+    {time:"10:30",type:"⭐",place:"Young Engineers — Galileo Technic & Robo Toys",address:"Kreuzberg, Berlin",note:"🚋 Tram M1 → Rosenthaler Platz → U8 → Kottbusser Tor (35 min). ✅ RESERVADO €25. 10:30-11:40h. Workshop mecánica y robótica con chicos berlineses.",map:G("Young Engineers Berlin Kreuzberg")},
+    {time:"12:00",type:"🍽️",place:"Almuerzo en Kreuzberg",address:"Bergmannstrasse / Mehringdamm, Kreuzberg",note:"🚶 10-15 min caminando desde Young Engineers. Barcomi's (Bergmannstr. 21) o Burgermeister bajo el viaducto.",map:G("Bergmannstrasse Kreuzberg Berlin")},
+    {time:"13:30",type:"👁️",place:"Zoologischer Garten Berlin",address:"Hardenbergplatz 8, Charlottenburg",note:"🚇 U1 → Kurfürstendamm → U9 → Zoologischer Garten (25 min). ✅ ENTRADA RESERVADA. Válido 09:00-17:00h. El zoo más antiguo de Alemania (1844). Pandas gigantes, hipopótamos, jirafas. Calculá 3 horas.",map:G("Zoologischer Garten Berlin Hardenbergplatz")},
+    {time:"16:30",type:"🚶",place:"Ku'damm — paseo",address:"Kurfürstendamm, Charlottenburg",note:"🚶 10 min caminando desde el Zoo. El gran bulevar del Berlín Oeste. Tiendas, arquitectura y vida de calle.",map:G("Kurfurstendamm Berlin")},
+    {time:"17:30",type:"🛍️",place:"KaDeWe — planta gourmet",address:"Tauentzienstrasse 21, Charlottenburg",note:"🚶 5 min desde el Ku'damm. El gran almacén más famoso de Alemania. La planta gourmet en el piso 6 es una atracción — quesos, embutidos, vinos. Cierra a las 20h.",map:G("KaDeWe Kaufhaus des Westens Tauentzienstrasse Berlin")},
+    {time:"21:00",type:"🍽️",place:"Cena — Charlottenburg",address:"Kantstrasse, Charlottenburg",note:"Ottenthal (Kantstr. 153, austriaco, mejor Wiener Schnitzel de Berlín, 4.7★) o Luardi Cucina della Mamma (Meinekestr. 24, italiano con trufa, 4.8★). Reservar.",map:G("Ottenthal Restaurant Kantstrasse Berlin")},
+  ]},
+  {id:5,date:"Dom 12 Jul",title:"Mauerpark · Berlin Story Bunker · Cirque du Soleil",emoji:"🎪",color:"#7B3FA0",stops:[
+    {time:"09:30",type:"👁️",place:"Mauerpark — Flea Market + Bearpit Karaoke",address:"Bernauer Str. 63-64, Prenzlauer Berg",note:"🚶 8 min caminando desde el hotel. Flea market gigante + Bearpit Karaoke. GRATIS.",map:G("Mauerpark Berlin Bernauer Strasse")},
+    {time:"13:00",type:"🍽️",place:"Almuerzo tranquilo — Prenzlauer Berg",address:"Prenzlauer Berg",note:"🚶 10 min caminando desde Mauerpark. Pasternak (Knaackstr. 22), Umami o cualquier opción de Kastanienallee.",map:G("Kastanienallee Prenzlauer Berg Berlin")},
+    {time:"14:00",type:"👁️",place:"Berlin Story Bunker",address:"Schöneberger Str. 23A, Kreuzberg",note:"🚋 Tram M1 → S-Bahn → Anhalter Bahnhof (25 min). 4.7★ Búnker real de la WWII. La única maqueta a escala 1:25 del Führerbunker existente. Audioguía en español incluida. Calculá 2,5h.",map:G("Berlin Story Bunker Schöneberger Strasse Berlin")},
+    {time:"16:30",type:"🚇",place:"Berlin Story Bunker → Potsdamer Platz",address:"Anhalter Bahnhof",note:"🚇 S1 desde Anhalter Bahnhof → Potsdamer Platz (5 min). Llegás con tiempo para pasear el Sony Center.",map:G("Potsdamer Platz Berlin Sony Center")},
+    {time:"17:00",type:"⭐",place:"Cirque du Soleil ALIZÉ",address:"Marlene-Dietrich-Platz 1, Potsdamer Platz",note:"🚶 5 min desde la estación. ⭐ ENTRADA RESERVADA. Llegar 20 min antes.",map:G("Marlene-Dietrich-Platz 1 Potsdamer Platz Berlin")},
+    {time:"21:00",type:"🍽️",place:"Cena — JÓMO Restaurant",address:"Rykestrasse 14, Prenzlauer Berg",note:"🚋 S-Bahn Potsdamer Platz → Schönhauser Allee → Tram M2 → Rykestrasse (25 min). Cena de despedida. Reservar.",map:G("JÓMO Restaurant Rykestrasse 14 Berlin")},
+    {time:"23:00",type:"🏨",place:"Preparar valijas",address:"Hotel Kastanienhof",note:"🚶 5 min caminando desde JÓMO. ⚠️ Tren DB 1503 · 13 Jul 07:36h desde Berlin Hbf → München 11:43h. Salir hotel 06:30h.",map:G("Hotel Kastanienhof Kastanienallee 65 Berlin")},
+  ]},
+];
+
+// ── NEIGHBORHOODS ─────────────────────────────────────────────────────────────
+const NBH=[
+  {id:"prenzlauer",name:"Prenzlauer Berg",emoji:"🌿",color:"#E8C547",tagline:"Tu barrio base. Fue Berlín Este, hoy el más deseado para vivir.",
+  vibe:"Bohemio pero asentado. Fachadas de ladrillo de 1900, árboles enormes, cafés en cada esquina. Berlín real sin poses.",
+  curiosity:"Durante la RDA era el barrio de disidentes y clase trabajadora. El Estado lo dejó deteriorar; eso paradójicamente preservó su arquitectura original. Tras la reunificación artistas lo tomaron por sus alquileres bajos. Hoy los alquileres son altos pero el espíritu persiste.",
+  german_tip:"Desayuná en una Bäckerei de Kastanienallee y que tu hijo pida: 'Einen Kaffee, ein Laugenbrezel und ein Croissant, bitte.'",
+  streets:[
+    {name:"Kastanienallee",desc:"La calle del hotel. La más icónica del barrio. La llaman 'Casting Allee' por los actores que viven ahí.",map:G("Kastanienallee Prenzlauer Berg Berlin")},
+    {name:"Oderberger Strasse",desc:"La más bonita: casas históricas perfectas, tiendas de diseño, cafés tranquilos. Desemboca en el Mauerpark.",map:G("Oderberger Strasse Prenzlauer Berg Berlin")},
+    {name:"Husemannstrasse",desc:"Parece un decorado de película. Restaurada al estilo 1900: faroles de época y empedrado.",map:G("Husemannstrasse Prenzlauer Berg Berlin")},
+    {name:"Schönhauser Allee",desc:"La arteria principal con el viaducto del U-Bahn encima. Más comercial pero con mucha vida local.",map:G("Schönhauser Allee Prenzlauer Berg Berlin")},
+  ],
+  cafes:[
+    {name:"Chestnut Coffee",address:"Kastanienallee 79",stars:"4.9★",desc:"El mejor café de la calle del hotel. Croissant de pistacho legendario. A metros del Kastanienhof.",map:G("Chestnut Coffee Kastanienallee 79 Berlin")},
+    {name:"Kaffee Momente",address:"Bötzowstrasse 21",stars:"4.9★",desc:"El café con mejores reseñas del barrio. Bagels caseros, tarta de chocolate densa.",map:G("Kaffee Momente Bötzowstrasse Berlin")},
+    {name:"Schim:Pause",address:"Dunckerstrasse 85",stars:"4.9★",desc:"Pequeño café coreano. El mejor french toast de Berlín. Muy popular.",map:G("Schim Pause Dunckerstrasse 85 Berlin")},
+    {name:"Bonanza Coffee Heroes",address:"Oderberger Str. 35",stars:"4.2★",desc:"Uno de los cafés de especialidad más respetados de Berlín. Granos de todo el mundo.",map:G("Bonanza Coffee Heroes Oderberger Strasse Berlin")},
+    {name:"Kaffee Marlene",address:"Kastanienallee 103",stars:"4.5★",desc:"Clásico del barrio. Abierto hasta medianoche. Tartas espectaculares.",map:G("Kaffee Marlene Kastanienallee 103 Berlin")},
+  ],
+  restaurants:[
+    {name:"Fukagawa Ramen",address:"Wörther Str. 22",stars:"4.7★",desc:"Ramen japonés auténtico de alto nivel. Brotes de soja, Tonkotsu, opciones con A5-Wagyu y trufa. La sucursal del barrio. Reservar. Abre 12-17h y 18-23h.",map:G("Fukagawa Ramen Wörther Strasse 22 Berlin Prenzlauer Berg")},
+    {name:"Restaurant Pasternak",address:"Knaackstrasse 22-24",stars:"4.8★",desc:"Cocina ruso-judía. Borscht, pato sous-vide, piano. Reservar.",map:G("Restaurant Pasternak Knaackstrasse Berlin")},
+    {name:"JÓMO Restaurant",address:"Rykestrasse 14",stars:"4.8★",desc:"Cocina europea de autor. El mejor restaurante del barrio para cena especial. Reservar.",map:G("JÓMO Restaurant Rykestrasse 14 Berlin")},
+    {name:"Zur Haxe",address:"Erich-Weinert-Str. 128",stars:"4.6★",desc:"La mejor Schweinshaxe del barrio. Solo efectivo. Menú en alemán.",map:G("Zur Haxe Erich-Weinert-Strasse Berlin")},
+    {name:"Umami P-Berg",address:"Knaackstrasse 16-18",stars:"4.6★",desc:"Cocina vietnamita rápida y asequible. Café vietnamita con leche condensada imprescindible.",map:G("Umami Prenzlauer Berg Knaackstrasse Berlin")},
+    {name:"Itarei",address:"Kollwitzstrasse 89",stars:"4.7★",desc:"Fusión japonesa-italiana. La pasta con anguila y nori es una de las mejores cosas de Berlín.",map:G("Itarei Kollwitzstrasse 89 Berlin")},
+  ],
+  shops:[
+    {name:"Fein und Ripp",address:"Kastanienallee 91",desc:"Ropa de caballero de principios del s. XX: trajes años 30, cuellos desmontables.",map:G("Fein und Ripp Kastanienallee 91 Berlin")},
+    {name:"Loretta Vintage",address:"Oderberger Str. 35",desc:"Vintage curado de alta calidad. Piezas de diseñador seleccionadas a mano.",map:G("Loretta vintage Oderberger Strasse Berlin")},
+  ],
+  sights:[
+    {name:"Mauerpark + Bearpit Karaoke",desc:"4.5★ Domingos: flea market gigante + karaoke al aire libre ante cientos de personas. Único en el mundo. 8 min del hotel.",map:G("Mauerpark Berlin")},
+    {name:"Prater Biergarten",desc:"4.3★ El más antiguo de Berlín (1837). Kastanienallee 7-9. Bajo castaños enormes. Solo en verano.",map:G("Prater Biergarten Kastanienallee 7 Berlin")},
+    {name:"Kollwitzplatz",desc:"La plaza central del barrio. Mercado orgánico los sábados.",map:G("Kollwitzplatz Prenzlauer Berg Berlin")},
+    {name:"Kulturbrauerei",desc:"4.5★ Cervecería del XIX reconvertida en espacio cultural. Cine, bares, mercadillo. Schönhauser Allee 36.",map:G("Kulturbrauerei Schönhauser Allee 36 Berlin")},
+  ]},
+
+  {id:"mitte",name:"Mitte",emoji:"🏛️",color:"#C8402A",tagline:"El corazón histórico. Berlín monumental, imperial y reunificado.",
+  vibe:"Todo lo que 'hay que ver'. Tiene capas: el Mitte turístico de Unter den Linden y el Mitte cool de Hackescher Markt.",
+  curiosity:"La Torre de TV fue construida por la RDA como símbolo socialista. La cúpula refleja una cruz cuando la luz solar la toca. Los trabajadores de fe cristiana lo hicieron a propósito. El gobierno de la RDA nunca pudo quitarla.",
+  german_tip:"Unter den Linden: leé los carteles de cada monumento en voz alta. Que tu hijo intente leer las inscripciones neoclásicas.",
+  streets:[
+    {name:"Unter den Linden",desc:"El gran bulevar de los Hohenzollern. De la Puerta de Brandeburgo a la Isla de los Museos.",map:G("Unter den Linden Berlin")},
+    {name:"Oranienburger Strasse",desc:"Arteria del barrio judío. La Nueva Sinagoga dorada, galerías y bares.",map:G("Oranienburger Strasse Mitte Berlin")},
+    {name:"Auguststrasse",desc:"La calle de las galerías de arte contemporáneo más importantes de Berlín.",map:G("Auguststrasse Mitte Berlin")},
+    {name:"Friedrichstrasse",desc:"El eje comercial. Mezcla de marcas internacionales y galerías de arte.",map:G("Friedrichstrasse Mitte Berlin")},
+    {name:"Rosenthaler Strasse",desc:"Une Hackescher Markt con el norte. Galerías, tiendas de diseño y los Hackesche Höfe.",map:G("Rosenthaler Strasse Mitte Berlin")},
+  ],
+  cafes:[
+    {name:"Distrikt Coffee",address:"Bergstrasse 68",stars:"4.4★",desc:"El mejor desayuno de Mitte. El french toast es legendario. Llegar temprano.",map:G("Distrikt Coffee Bergstrasse 68 Berlin")},
+    {name:"Cappuccino Grand Café",address:"Tucholskystrasse 36",stars:"4.7★",desc:"Brunch delicioso y espresso perfecto. Ambiente muy curado.",map:G("Cappuccino Grand Café Tucholskystrasse Berlin")},
+    {name:"ACID Mitte",address:"Rosenthaler Str. 9",stars:"4.0★",desc:"Specialty café. El cardamom bun y la Babka son legendarios.",map:G("ACID Mitte Rosenthaler Strasse 9 Berlin")},
+  ],
+  restaurants:[
+    {name:"Schnitzelei Mitte",address:"Chausseestr. 8",stars:"4.5★",desc:"Schnitzel de ternera con cerveza de bienvenida. Reservar.",map:G("Schnitzelei Mitte Berlin")},
+    {name:"Bocca Felice",address:"Seydelstrasse 16",stars:"4.9★",desc:"Italiano de altísimo nivel. Pasta con trufa. Uno de los mejores de Berlín.",map:G("Ristorante Bocca Felice Berlin")},
+    {name:"Zur Gerichtslaube",address:"Poststrasse 28",stars:"4.5★",desc:"El mejor del Nikolaiviertel. Goulash y Kalbsbäckchen excepcionales.",map:G("Zur Gerichtslaube Poststrasse 28 Berlin")},
+    {name:"Mutter Hoppe",address:"Rathausstrasse 21",stars:"4.4★",desc:"Gasthaus tradicional. Menú en alemán — desafío para tu hijo. Abierto hasta medianoche.",map:G("Mutter Hoppe Rathausstrasse Berlin")},
+  ],
+  shops:[
+    {name:"Hackesche Höfe",address:"Rosenthaler Str. 40",desc:"8 patios art nouveau con tiendas de diseño, galerías y joyerías.",map:G("Hackesche Höfe Berlin")},
+    {name:"Mongolian Green Labels",address:"Am Nußbaum 8",stars:"5.0★",desc:"Cachemira y lana de yak de Mongolia. Calidad excepcional.",map:G("Mongolian Green Labels Am Nußbaum 8 Berlin")},
+  ],
+  sights:[
+    {name:"Puerta de Brandeburgo",desc:"4.7★ El símbolo de Berlín. GRATIS 24h. De noche iluminada es impresionante.",map:G("Brandenburger Tor Pariser Platz Berlin")},
+    {name:"Neues Museum — Nefertiti",desc:"⭐ El museo imprescindible de Berlín. Empezar por Sala 2.10 (Nefertiti, primera planta) antes de que haya cola. Después: el Oro de Schliemann (joyas de Troya de 3.000 años), momias egipcias y Hombre de Neanderthal. El edificio restaurado con cicatrices de la WWII intactas es parte de la experiencia. Reservar online.",map:G("Neues Museum Berlin Bodestrasse")},
+    {name:"Hackescher Markt",desc:"La plaza más animada de Mitte. Hub de transporte y punto de encuentro berlinés. Rodeado de bares y restaurantes.",map:G("Hackescher Markt Berlin")},
+    {name:"Nikolaiviertel",desc:"Barrio más antiguo de Berlín (s. XIII). Adoquines medievales y vistas al Spree.",map:G("Nikolaiviertel Berlin")},
+    {name:"Checkpoint Charlie",desc:"El paso fronterizo más famoso de la Guerra Fría. GRATIS 24h. Está en el límite con Kreuzberg.",map:G("Checkpoint Charlie Friedrichstrasse Berlin")},
+    {name:"Berlin Story Bunker",desc:"4.7★ Museo del nazismo dentro de un búnker real de la WWII. Schöneberger Str. 23A. Calculá 2,5-3h.",map:G("Berlin Story Bunker Schöneberger Strasse Berlin")},
+    {name:"Reichstag — cúpula",desc:"GRATIS con vistas 360°. Reservar en bundestag.de obligatorio.",map:G("Reichstag Berlin cúpula")},
+    {name:"Nueva Sinagoga",desc:"Edificio icónico. Museo sobre la historia judía de la ciudad. Cerrado sábados.",map:G("Neue Synagoge Oranienburger Strasse Berlin")},
+  ]},
+
+  {id:"kreuzberg",name:"Kreuzberg",emoji:"✊",color:"#C8402A",tagline:"El barrio más mitológico de Berlín. Punk, multicultural e irrepetible.",
+  vibe:"La contracultura de los 70s, la inmigración turca, el activismo político, el arte callejero y la mejor gastronomía callejera de Europa.",
+  curiosity:"Durante la Guerra Fría, Kreuzberg quedó en Berlín Oeste pegado al Muro por tres lados. Era el fin del mundo occidental — alquileres baratísimos, nadie 'normal' quería vivir ahí. Eso atrajo artistas, inmigrantes y disidentes. Esa mezcla explosiva definió el barrio para siempre.",
+  german_tip:"En Mustafa's: pedí los ingredientes en alemán. En la East Side Gallery: leed los textos de cada mural, están en alemán e inglés.",
+  streets:[
+    {name:"Bergmannstrasse",desc:"La más elegante y curada: cafés de especialidad, vintage, panaderías artesanales.",map:G("Bergmannstrasse Kreuzberg Berlin")},
+    {name:"Oranienstrasse",desc:"La más política e intensa: murales, tiendas alternativas, bares legendarios.",map:G("Oranienstrasse Kreuzberg Berlin")},
+    {name:"Paul-Lincke-Ufer",desc:"El paseo junto al Landwehrkanal. Mercado turco martes y viernes.",map:G("Paul-Lincke-Ufer Berlin Kreuzberg")},
+    {name:"Schlesische Strasse",desc:"Junto al canal, vistas al Oberbaumbrücke. Galerías y restaurantes de moda.",map:G("Schlesische Strasse Kreuzberg Berlin")},
+  ],
+  cafes:[
+    {name:"Coffee Circle Bergmann",address:"Bergmannstrasse 10",stars:"4.8★",desc:"El mejor specialty coffee de la calle. Sin wi-fi adrede — presencia real.",map:G("Coffee Circle Bergmannstrasse 10 Berlin")},
+    {name:"Barcomi's Kafferösterei",address:"Bergmannstrasse 21",stars:"4.3★",desc:"Tostadora propia, bagels caseros y tartas espectaculares. Institución desde los 90s.",map:G("Barcomi's Kafferösterei Bergmannstrasse Berlin")},
+    {name:"Café Luzia",address:"Oranienstrasse 34",stars:"4.2★",desc:"El bar-café más emblemático de Kreuzberg. Cócteles y velas. Hasta las 4h.",map:G("Café Luzia Oranienstrasse 34 Berlin")},
+  ],
+  restaurants:[
+    {name:"Mustafa's Gemüse Kebap",address:"Mehringdamm 33",stars:"4.2★",desc:"El döner de vegetales grillados más famoso de Berlín. Cola larga pero vale.",map:G("Mustafa's Gemüse Kebap Mehringdamm 33 Berlin")},
+    {name:"Ristorante Leo e Pepe",address:"Görlitzer Str. 63",stars:"4.9★",desc:"Italiano pequeño y exquisito. Tiramisú casero de los mejores de Berlín.",map:G("Ristorante Leo e Pepe Görlitzer Strasse Berlin")},
+    {name:"Fourty Years Kitchen",address:"Dieffenbachstrasse 52",stars:"4.8★",desc:"Cocina turco-mediterránea. La shakshuka con yogur es legendaria.",map:G("Fourty Years Kitchen Dieffenbachstrasse Berlin")},
+    {name:"Markthalle Neun",address:"Eisenbahnstrasse 42",stars:"4.4★",desc:"Mercado cubierto de 1891. Street Food Thursday jueves 18-22h.",map:G("Markthalle Neun Eisenbahnstrasse 42 Berlin")},
+    {name:"Burgermeister",address:"Oberbaumstrasse 8",stars:"4.7★",desc:"El burger más famoso de Berlín, bajo el viaducto del U-Bahn. Abierto hasta las 4h.",map:G("Burgermeister Schlesisches Tor Oberbaumstrasse Berlin")},
+  ],
+  shops:[
+    {name:"Marheineke Markthalle",address:"Marheinekeplatz 15",desc:"Mercado cubierto gourmet. Quesos, embutidos, cafés artesanos.",map:G("Marheineke Markthalle Berlin")},
+    {name:"Dedstrange Vintage",address:"Muskauer Str. 24",stars:"4.9★",desc:"El mejor vintage de Kreuzberg. Piezas seleccionadas a mano.",map:G("Dedstrange Vintage Muskauer Strasse Berlin")},
+  ],
+  sights:[
+    {name:"Gropius Bau",desc:"Uno de los mejores espacios expositivos de Berlín. Aquí es la expo de Marina Abramović.",map:G("Gropius Bau Niederkirchnerstrasse Berlin")},
+    {name:"Checkpoint Charlie",desc:"El paso fronterizo más famoso de la Guerra Fría. GRATIS 24h. El museo de enfrente es caro — mejor saltear.",map:G("Checkpoint Charlie Friedrichstrasse Berlin")},
+    {name:"Berlin Story Bunker",desc:"4.7★ Museo del nazismo en un búnker real de la WWII. Schöneberger Str. 23A. Calculá 2,5-3h.",map:G("Berlin Story Bunker Schöneberger Strasse Berlin")},
+    {name:"East Side Gallery",desc:"GRATIS 24h. 1,3 km del Muro. El beso Honecker-Brezhnev.",map:G("East Side Gallery Berlin")},
+    {name:"Oberbaumbrücke",desc:"El puente más bonito de Berlín. Torres neogóticas en ladrillo rojo.",map:G("Oberbaumbrücke Berlin")},
+    {name:"Viktoriapark",desc:"4.5★ El parque más alto de Kreuzberg. Cascada artificial y vistas panorámicas.",map:G("Viktoriapark Kreuzberg Berlin")},
+  ]},
+
+  {id:"neukolln",name:"Neukölln",emoji:"🌍",color:"#3A6B8A",tagline:"El Kreuzberg de esta década. Más crudo, más genuino, más vivo.",
+  vibe:"Barrio árabe, turco, kurdo y africano mezclado con creativos europeos. La gentrificación convive con la autenticidad de una manera única.",
+  curiosity:"Karl-Marx-Strasse fue la calle comercial más importante de Berlín Oeste para la clase trabajadora. Cuando llegó la inmigración turca masiva en los 60-70s, Neukölln se convirtió en el barrio con mayor concentración de turcos fuera de Turquía.",
+  german_tip:"Pedí en los cafés de Hermannstrasse en alemán. Las panaderías turcas tienen nombres en alemán — leelos con tu hijo.",
+  streets:[
+    {name:"Weichselstrasse",desc:"El epicentro del Reuterkiez. Bares, cafés de autor, tiendas de diseño. Muy animada de noche.",map:G("Weichselstrasse Reuterkiez Neukölln Berlin")},
+    {name:"Pannierstrasse",desc:"El Neukölln creativo. Restaurantes de autor, galerías y bares de culto.",map:G("Pannierstrasse Neukölln Berlin")},
+    {name:"Karl-Marx-Strasse",desc:"La arteria principal. Caótica y multicultural: mercados árabes, panaderías turcas.",map:G("Karl-Marx-Strasse Neukölln Berlin")},
+    {name:"Hermannstrasse",desc:"Los mejores cafés de tercera ola del barrio y mercado árabe en Hermannplatz.",map:G("Hermannstrasse Neukölln Berlin")},
+  ],
+  cafes:[
+    {name:"Savo Bar Café",address:"Weissestrasse 35",stars:"4.8★",desc:"La joya coctelera de Neukölln. El barista japonés hace magia.",map:G("Savo Bar Café Weissestrasse Neukölln Berlin")},
+    {name:"Nah am Wasser Gebaut",address:"Kiehlufer 55",stars:"4.4★",desc:"Café junto al canal de Neukölln. Desayuno y brunch de todo el día. Zumos frescos a medida, quiches de salmón, falafel bowl, opciones veganas. Interior precioso con terraza al agua. Perfecto antes del Mercado Turco.",map:G("Nah am Wasser Gebaut Kiehlufer 55 Berlin Neukölln")},
+    {name:"Myxa Berlin",address:"Lenaustrasse 22",stars:"4.6★",desc:"Café-bistró griego. El cheesecake de pistacho es extraordinario.",map:G("Myxa Berlin Lenaustrasse 22")},
+    {name:"Sorrel",address:"Pannierstrasse 40",stars:"4.5★",desc:"Fusión franco-japonesa-alemana de temporada. Brunch y cena.",map:G("Sorrel café Pannierstrasse 40 Berlin")},
+    {name:"Nathanja & Heinrich",address:"Weichselstrasse 44",stars:"4.4★",desc:"Negronis excepcionales. Llegar antes de las 21h.",map:G("Nathanja Heinrich Bar Weichselstrasse Berlin")},
+  ],
+  restaurants:[
+    {name:"MiMA Restaurant",address:"Karl-Marx-Str. 55",stars:"⭐ Nueva apertura",desc:"Cocina chipriota tradicional modernizada. La cocina de la abuela de Chipre, reinterpretada. Mezze, pescado y especias mediterráneas orientales. Una de las cocinas más originales y desconocidas de Berlín. En el espacio compartido Paolo Pinkel.",map:G("MiMA Restaurant Karl-Marx-Strasse 55 Berlin Neukölln")},
+    {name:"Küche3",address:"Karl-Marx-Str. 55",stars:"⭐ Nueva apertura",desc:"Cocina siciliana con influencias berlinesas modernas. Walk-in desde las 18h. De los mismos creadores que Kugel3 (helado artesanal siciliano). Uno de los proyectos más interesantes de la nueva escena de Neukölln.",map:G("Küche3 Karl-Marx-Strasse 55 Berlin Neukölln")},
+    {name:"Kramer Restaurant",address:"Pannierstrasse 41",stars:"4.8★",desc:"Cocina de temporada de altísimo nivel. Nivel Michelin sin estrella. Reservar.",map:G("Kramer Restaurant Pannierstrasse 41 Berlin")},
+    {name:"Restaurant DOHA",address:"Hermannstrasse 70",stars:"4.8★",desc:"El mejor steak de Neukölln en ambiente árabe generoso.",map:G("Restaurant DOHA Hermannstrasse Berlin")},
+    {name:"MABEL Restaurant-Bar",address:"Karl-Marx-Str. 283",stars:"4.8★",desc:"Cocina moderna con carácter y música. El más animado del barrio.",map:G("MABEL Restaurant Bar Karl-Marx-Strasse Berlin")},
+  ],
+  shops:[
+    {name:"Hermannplatz — mercado árabe",address:"Hermannplatz / Hermannstrasse",desc:"Las tiendas de ingredientes árabes y turcos más auténticas de Berlín. Perfecto para llevarse especias.",map:G("Hermannplatz Neukölln mercado árabe Berlin")},
+  ],
+  sights:[
+    {name:"Körnerpark",desc:"4.6★ El jardín secreto más bello de Berlín. Neoclásico hundido bajo el nivel de la calle.",map:G("Körnerpark Neukölln Berlin")},
+    {name:"Tempelhofer Feld",desc:"4.6★ El aeropuerto de 1948 convertido en parque. Ciclismo en las pistas de aterrizaje.",map:G("Tempelhofer Feld Berlin")},
+    {name:"Klunkerkranich",desc:"Terraza bar en la azotea del Neukölln Arcaden. Vistas 360° de Berlín. Solo en verano.",map:G("Klunkerkranich Berlin Neukölln Arcaden")},
+    {name:"Richardkiez",desc:"El barrio dentro del barrio. Calles del s. XIX, casi sin turistas.",map:G("Richardplatz Neukölln Berlin")},
+  ]},
+
+  {id:"charlottenburg",name:"Charlottenburg",emoji:"👑",color:"#4A7C59",tagline:"El Berlín de siempre. Elegante, occidental, con historia aristocrática.",
+  vibe:"Si Kreuzberg es el punk, Charlottenburg es el jazz de los años 50. El escaparate del capitalismo occidental durante la Guerra Fría.",
+  curiosity:"La Kaiser-Wilhelm-Gedächtniskirche fue bombardeada en 1943 y se dejó en ruinas como memorial anti-guerra. Los berlineses la llaman cariñosamente el 'Hohler Zahn' (diente hueco).",
+  german_tip:"En el KaDeWe: pedí en la sección de gastronomía en alemán. El personal en productos locales suele hablar principalmente alemán.",
+  streets:[
+    {name:"Kurfürstendamm (Ku'damm)",desc:"El gran bulevar de compras del Berlín Oeste. Tiendas de lujo, teatros y la Gedächtniskirche.",map:G("Kurfürstendamm Berlin")},
+    {name:"Kantstrasse",desc:"Paralela al Ku'damm pero más local. Los mejores restaurantes asiáticos de Berlín.",map:G("Kantstrasse Charlottenburg Berlin")},
+    {name:"Savignyplatz",desc:"Plaza íntima con restaurantes con terraza, antigüedades y librerías bajo los arcos del S-Bahn.",map:G("Savignyplatz Charlottenburg Berlin")},
+    {name:"Fasanenstrasse",desc:"La más elegante: galerías de arte y la Casa de Literatura (Literaturhaus).",map:G("Fasanenstrasse Charlottenburg Berlin")},
+  ],
+  cafes:[
+    {name:"Café au Lait",address:"Kantstrasse 110",stars:"4.4★",desc:"El favorito del barrio para desayunar. Tortitas de manzana caramelizada.",map:G("Café au Lait Kantstrasse 110 Berlin")},
+    {name:"Der Kuchenladen",address:"Kantstrasse 138",stars:"4.7★",desc:"La pastelería más famosa de Charlottenburg. Tartas enormes para compartir.",map:G("Der Kuchenladen Kantstrasse 138 Berlin")},
+    {name:"THE BARN Ku'damm",address:"Kurfürstendamm 21",stars:"4.7★",desc:"La tostadora de especialidad más reconocida de Berlín.",map:G("The Barn coffee Kurfürstendamm 21 Berlin")},
+  ],
+  restaurants:[
+    {name:"Luardi Cucina della Mamma",address:"Meinekestrasse 24",stars:"4.8★",desc:"El italiano más querido de Charlottenburg. Pasta fresca con trufa. Reservar.",map:G("Luardi Cucina della Mamma Meinekestrasse Berlin")},
+    {name:"Ottenthal",address:"Kantstrasse 153",stars:"4.7★",desc:"Austriaco clásico. El mejor Wiener Schnitzel de Berlín y un Apfelstrudel de ensueño.",map:G("Ottenthal Restaurant Kantstrasse Berlin")},
+    {name:"Schnitzelei Charlottenburg",address:"Röntgenstrasse 7b",stars:"4.5★",desc:"Cerveza de bienvenida y schnitzel de ternera perfecto. Reservar.",map:G("Schnitzelei Charlottenburg Berlin")},
+  ],
+  shops:[
+    {name:"KaDeWe",address:"Tauentzienstrasse 21",desc:"El gran almacén más famoso de Alemania (1907). Recién renovado por el estudio OMA con un atrio central de 6 pisos y escaleras de madera. La planta gourmet en el piso 6 es una atracción en sí misma — quesos, embutidos, vinos extraordinarios. No hay que comprar nada para visitarla.",map:G("KaDeWe Kaufhaus des Westens Tauentzienstrasse Berlin")},
+  ],
+  sights:[
+    {name:"Schloss Charlottenburg",desc:"4.6★ El palacio barroco más impresionante de Berlín (s. XVII). Jardines GRATUITOS. Interior €12.",map:G("Schloss Charlottenburg Berlin")},
+    {name:"Kaiser-Wilhelm-Gedächtniskirche",desc:"4.6★ La iglesia en ruinas como monumento anti-guerra. Los berlineses la llaman 'el diente hueco'.",map:G("Kaiser Wilhelm Gedächtniskirche Berlin")},
+    {name:"C/O Berlin — Fotografía",desc:"4.6★ Uno de los mejores espacios de fotografía contemporánea de Europa.",map:G("CO Berlin Amerika Haus Hardenbergstrasse")},
+    {name:"The Upside Down Berlin",desc:"4.8★ Experiencia inmersiva con ~20 salas al revés. ~1,5h. Dom 10-18h. Alte Potsdamer Str. 7.",map:G("The Upside Down Berlin Potsdamer Platz")},
+    {name:"LEGOLAND Discovery Centre",desc:"3.7★ MiniLand con Berlín en LEGO. Abre 10-18h. Comprar tickets online. Potsdamer Str. 4.",map:G("LEGOLAND Discovery Centre Berlin Potsdamer Strasse")},
+    {name:"Deutsche Oper Berlin",desc:"Una de las tres grandes óperas de Berlín. Bismarckstrasse 35.",map:G("Deutsche Oper Berlin Bismarckstrasse")},
+  ]},
+
+  {id:"friedrichshain",name:"Friedrichshain",emoji:"⚡",color:"#7B3FA0",tagline:"El hermano más joven y crudo de Kreuzberg. Berlín Este puro.",
+  vibe:"ADN de la ex Berlín Este. Bloques soviéticos monumentales, escena electrónica mundial, vida de barrio genuina de día y underground brutal de noche.",
+  curiosity:"La Karl-Marx-Allee se llamaba Stalinallee y fue construida en 1952 como vitrina del socialismo: 90 metros de ancho, edificios monumentales de cerámica. La hicieron tan imponente para que el individuo se sintiese pequeño frente al Estado.",
+  german_tip:"El Märchenbrunnen del Volkspark: cada figura lleva el nombre del cuento en alemán. Rotkäppchen, Aschenputtel, Schneewittchen.",
+  streets:[
+    {name:"Karl-Marx-Allee",desc:"El bulevar estalinista más impresionante de Europa. 90 metros de ancho. Desde Strausberger Platz hasta Frankfurter Tor.",map:G("Karl-Marx-Allee Friedrichshain Berlin")},
+    {name:"Simon-Dach-Strasse",desc:"La más animada de día y noche. Cafés de brunch, bares, restaurantes.",map:G("Simon-Dach-Strasse Friedrichshain Berlin")},
+    {name:"Boxhagener Strasse",desc:"Más relajada y local. Tiendas de barrio y bares de vecinos.",map:G("Boxhagener Strasse Friedrichshain Berlin")},
+    {name:"Grünberger Strasse",desc:"Une Simon-Dach con Boxhagener Platz. Muy animada, la mejor mezcla.",map:G("Grünberger Strasse Friedrichshain Berlin")},
+  ],
+  cafes:[
+    {name:"Silo Coffee",address:"Gabriel-Max-Strasse 4",stars:"4.5★",desc:"El más popular del barrio. Los pancakes de canela son legendarios.",map:G("Silo Coffee Gabriel-Max-Strasse Berlin")},
+    {name:"All About Berlin",address:"Rigaer Str. 75",stars:"4.7★",desc:"Desayuno con influencia vietnamita. El egg coffee es único.",map:G("All About Berlin café Rigaer Strasse 75")},
+    {name:"Milja & Schäfa",address:"Sonntagstrasse 1",stars:"4.7★",desc:"Brunch de culto. Tortitas con chocolate blanco y arándanos. Solo cash.",map:G("Milja Schäfa Sonntagstrasse Berlin")},
+  ],
+  restaurants:[
+    {name:"A Mano",address:"Strausberger Pl. 2",stars:"4.8★",desc:"Italiano moderno en plena Karl-Marx-Allee. Sofisticado. Reservar.",map:G("A Mano restaurant Strausberger Platz Berlin")},
+    {name:"Trattoria Portofino",address:"Gubener Str. 48",stars:"4.7★",desc:"El italiano de barrio más querido. Ambiente de velas, menú estacional.",map:G("Trattoria Portofino Gubener Strasse Berlin")},
+    {name:"Golden Fleece",address:"Mainzer Str. 20",stars:"4.7★",desc:"Cocina georgiana: khachapuri (pan relleno de queso) y khinkali (dumplings).",map:G("Golden Fleece Georgian restaurant Mainzer Strasse Berlin")},
+  ],
+  shops:[
+    {name:"Galactic Supermarket Records",address:"Petersburger Str. 89",stars:"4.7★",desc:"Vi y sáb 12-20h. Jazz, blues, prog, krautrock. De los mejores de Berlín.",map:G("Galactic Supermarket Records Petersburger Strasse Berlin")},
+    {name:"Vinyl-a-GoGo",address:"Krossener Str. 24",stars:"4.6★",desc:"Selección impecable. Rap americano clásico, R&B, rock, punk.",map:G("Vinyl-a-GoGo Krossener Strasse Berlin")},
+  ],
+  sights:[
+    {name:"Holzmarkt 25",desc:"Villa urbana cooperativa a orillas del Spree. Nació del legendario Bar 25. Bares, puestos de comida, música en vivo y parque junto al río. Entrada gratuita. Perfecto al atardecer.",map:G("Holzmarkt 25 Berlin")},
+    {name:"East Side Gallery",desc:"GRATIS 24h. 1,3 km del Muro de Berlín con murales de 21 países.",map:G("East Side Gallery Berlin")},
+    {name:"Volkspark — Märchenbrunnen",desc:"La fuente de los cuentos de hadas (1913) con figuras Grimm en mármol.",map:G("Märchenbrunnen Volkspark Friedrichshain Berlin")},
+    {name:"Karl-Marx-Allee",desc:"Caminala desde Strausberger Platz hasta Frankfurter Tor. GRATIS.",map:G("Karl-Marx-Allee Strausberger Platz Berlin")},
+    {name:"RAW-Gelände",desc:"4.4★ Revaler Str. 99. Complejo ferroviario: skate park, murales, clubs y flea market domingos.",map:G("RAW-Gelände Revaler Strasse 99 Friedrichshain Berlin")},
+    {name:"Urban Spree",desc:"4.3★ Dentro del RAW-Gelände. Galería de arte urbano, sala de conciertos y espacio creativo. Mercado de diseño los fines de semana y exposiciones de street art. Revaler Str. 99.",map:G("Urban Spree Berlin Revaler Strasse")},
+    {name:"Cassiopeia",desc:"4.2★ Club alternativo con skatepark propio dentro del RAW-Gelände. Música en vivo, DJ sets y ambiente underground auténtico. Revaler Str. 99.",map:G("Cassiopeia Club Berlin Revaler Strasse")},
+    {name:"Computerspiele Museum",desc:"4.4★ El primer museo permanente de videojuegos del mundo. Karl-Marx-Allee 93A. 300 objetos desde los años 50 hasta hoy. Para tu hijo es un lugar único. Abre Ma-Do 10-20h.",map:G("Computerspiele Museum Berlin Karl-Marx-Allee")},
+    {name:"Boxhagener Platz (el Boxi)",desc:"La plaza más viva. Mercado de pulgas sábados, antigüedades domingos.",map:G("Boxhagener Platz Friedrichshain Berlin")},
+  ]},
+];
+
+// ── PHRASES ───────────────────────────────────────────────────────────────────
+const PHRASES=[
+  {phrase:"Eine Currywurst mit Pommes, bitte.",translation:"Una currywurst con papas, por favor.",context:"📍 Curry Mitte · Día 1"},
+  {phrase:"Einen Kaffee, ein Laugenbrezel und ein Croissant, bitte.",translation:"Un café, un pretzel y un croissant, por favor.",context:"🥐 Bäckería · mañanas"},
+  {phrase:"Was kostet das?",translation:"¿Cuánto cuesta esto?",context:"🛍️ Mercados y tiendas"},
+  {phrase:"Ich hätte gerne eine Schweinshaxe, bitte.",translation:"Quisiera un codillo de cerdo, por favor.",context:"🍖 Zur Haxe · Día 4"},
+  {phrase:"Entschuldigung, wo ist die U-Bahn?",translation:"Disculpe, ¿dónde está el metro?",context:"🚇 Transporte"},
+  {phrase:"Einmal hin und zurück, bitte.",translation:"Un billete de ida y vuelta, por favor.",context:"🎟️ Transporte"},
+  {phrase:"Kann ich bitte die Rechnung haben?",translation:"¿Me puede traer la cuenta, por favor?",context:"🧾 Restaurantes"},
+  {phrase:"Das schmeckt sehr gut!",translation:"¡Esto está muy rico!",context:"😋 Restaurantes"},
+  {phrase:"Haben Sie eine Speisekarte auf Deutsch?",translation:"¿Tienen menú en alemán?",context:"📖 El desafío en restaurantes"},
+  {phrase:"Ich lerne Deutsch.",translation:"Estoy aprendiendo alemán.",context:"🗣️ Para presentarse"},
+  {phrase:"Rotkäppchen, Aschenputtel, Schneewittchen.",translation:"Caperucita Roja, Cenicienta, Blancanieves.",context:"📍 Volkspark Friedrichshain · Märchenbrunnen"},
+  {phrase:"Einen Kaffee mit Milch, bitte.",translation:"Un café con leche, por favor.",context:"☕ En cualquier café"},
+  {phrase:"Wo ist die nächste Haltestelle?",translation:"¿Dónde está la próxima parada?",context:"🚋 Tram M1 desde el hotel"},
+  {phrase:"Auf Wiedersehen, Berlin!",translation:"¡Hasta la vista, Berlín!",context:"✈️ Despedida · 13 Jul"},
+];
+
+// ── RESERVAS ──────────────────────────────────────────────────────────────────
+const RES={
+  ready:[
+    {name:"Neues Museum",icon:"🏛️",note:"✅ Reservado. Mié 9 Jul, entrada todo el día. Ticket: 203lMNoJyeLElA3yO. Gratis (menor de 18 y reserva gratuita). Bodestrasse, entrada por James-Simon-Galerie."},
+    {name:"Marina Abramović / Gropius Bau",icon:"🎨",note:"✅ Entrada reservada. Viernes 10 Jul, 15:00h."},
+    {name:"Cirque du Soleil ALIZÉ",icon:"🎪",note:"✅ Entrada reservada. Domingo 12 Jul, 17:00h."},
+    {name:"Berlin Story Bunker",icon:"🏛️",note:"✅ Reservado y pagado. Dom 12 Jul. Adulto: 260608UC3JN76WT · Niño: 2606088ME34PLE8."},
+    {name:"Young Engineers — Galileo Technic & Robo Toys",icon:"🤖",note:"✅ Reservado y pagado €25. Sábado 11 Jul, 10:30-11:40h. Kreuzberg."},
+  ],
+  pending:[
+    {name:"Berlin Story Bunker",icon:"🏛️",url:"berlinstory-bunker.de",note:"✅ Reservado y pagado. Dom 12 Jul. Adulto: 260608UC3JN76WT · Niño: 2606088ME34PLE8. Válido hasta las 14:00h UTC (= 16:00h hora de Berlín)."},
+    {name:"Zoologischer Garten Berlin",icon:"🐘",note:"✅ Reservado y pagado. Sáb 11 Jul. Válido 09:00-17:00h. Adulto ID: 1101424252-5925645 · Niño ID: 1101424252-5925647. Booking: 1101424252."},
+    {name:"The Upside Down Berlin",icon:"🙃",url:"the-upsidedown.de",note:"Reservar online. Domingo 12 Jul ~14:30h. Potsdamer Platz."},
+    {name:"JÓMO Restaurant",icon:"🍽️",url:"+49 30 programar",note:"Reservar para cena del domingo 12 Jul. Rykestrasse 14, Prenzlauer Berg."},
+    {name:"Zur Haxe",icon:"🍺",url:"+49 30 4216312",note:"Reserva por teléfono. Solo efectivo. Para cualquier noche."},
+  ]
+};
+
+// ── MAP DATA ──────────────────────────────────────────────────────────────────
+// All pins: {lat, lng, name, cat, color, addr, note, gmap}
+// cat: itinerary | eat | cafe | sight | shop
+const PINS=[
+  // ── ITINERARY STOPS ──
+  {lat:52.5402,lng:13.4183,name:"Hotel Kastanienhof",cat:"itinerary",color:"#E8C547",addr:"Kastanienallee 65, Prenzlauer Berg",note:"Tu base. Tram M1 en la puerta.",gmap:G("Hotel Kastanienhof Kastanienallee 65 Berlin"),day:1},
+  {lat:52.5219,lng:13.4133,name:"Alexanderplatz — Weltzeituhr",cat:"itinerary",color:"#E8C547",addr:"Alexanderplatz, Mitte",note:"El reloj mundial soviético de 1969.",gmap:G("Weltzeituhr Alexanderplatz Berlin"),day:1},
+  {lat:52.5173,lng:13.4022,name:"Nikolaiviertel",cat:"itinerary",color:"#E8C547",addr:"Nikolaikirchplatz, Mitte",note:"El barrio más antiguo de Berlín, s. XIII.",gmap:G("Nikolaiviertel Berlin"),day:1},
+  {lat:52.524,lng:13.4008,name:"ACID Mitte — desayuno",cat:"itinerary",color:"#C8402A",addr:"Rosenthaler Str. 9, Mitte",note:"Día 2 · Cardamom bun y Babka legendarios.",gmap:G("ACID Mitte Rosenthaler Strasse 9 Berlin"),day:2},
+  {lat:52.5169,lng:13.4019,name:"Neues Museum — Nefertiti",cat:"itinerary",color:"#C8402A",addr:"Bodestrasse 1-3, Mitte",note:"✅ Reservado, gratis. Entrada por James-Simon-Galerie.",gmap:G("Neues Museum Berlin Bodestrasse"),day:2},
+  {lat:52.5163,lng:13.3777,name:"Puerta de Brandeburgo",cat:"itinerary",color:"#C8402A",addr:"Pariser Platz, Mitte",note:"Día 2 · El símbolo de Berlín. GRATIS 24h.",gmap:G("Brandenburger Tor Pariser Platz Berlin"),day:2},
+  {lat:52.505,lng:13.4397,name:"East Side Gallery",cat:"itinerary",color:"#C8402A",addr:"Mühlenstrasse, Friedrichshain",note:"GRATIS. 1,3 km del Muro. Buscar el beso Honecker-Brezhnev.",gmap:G("East Side Gallery Berlin"),day:2},
+  {lat:52.4748,lng:13.4213,name:"Neukölln — Reuterkiez",cat:"itinerary",color:"#3A6B8A",addr:"Weichselstrasse, Neukölln",note:"Día 3 · Desayuno en Two Planets o Myxa.",gmap:G("Weichselstrasse Reuterkiez Neukölln Berlin"),day:3},
+  {lat:52.4939,lng:13.4287,name:"Mercado Turco — Paul-Lincke-Ufer",cat:"itinerary",color:"#3A6B8A",addr:"Maybachufer, Kreuzberg",note:"Día 3 · Viernes: especias, aceitunas, quesos.",gmap:G("Türkenmarkt Maybachufer Berlin"),day:3},
+  {lat:52.4894,lng:13.3836,name:"Mustafa's Gemüse Kebap",cat:"itinerary",color:"#3A6B8A",addr:"Mehringdamm 33, Kreuzberg",note:"El döner más famoso de Berlín.",gmap:G("Mustafa's Gemüse Kebap Mehringdamm 33 Berlin"),day:3},
+  {lat:52.5075,lng:13.3862,name:"Checkpoint Charlie",cat:"itinerary",color:"#3A6B8A",addr:"Friedrichstrasse 43-45, Kreuzberg",note:"Día 3 · Paso fronterizo más famoso de la Guerra Fría. GRATIS.",gmap:G("Checkpoint Charlie Friedrichstrasse Berlin"),day:3},
+  {lat:52.4894,lng:13.3882,name:"Gropius Bau — Marina Abramović ⭐",cat:"itinerary",color:"#3A6B8A",addr:"Niederkirchnerstr. 7, Kreuzberg",note:"⭐ ENTRADA RESERVADA. Viernes 10 Jul 15:00h.",gmap:G("Gropius Bau Niederkirchnerstrasse 7 Berlin"),day:3},
+  {lat:52.4992,lng:13.4279,name:"Markthalle Neun — Street Food",cat:"itinerary",color:"#3A6B8A",addr:"Eisenbahnstrasse 42, Kreuzberg",note:"Día 3 · Viernes: productores locales.",gmap:G("Markthalle Neun Eisenbahnstrasse 42 Berlin"),day:3},
+  {lat:52.4923,lng:13.4184,name:"Young Engineers ⭐",cat:"itinerary",color:"#4A7C59",addr:"Kreuzberg, Berlin",note:"✅ RESERVADO. Sáb 11 Jul 10:30-11:40h. €25 pagado.",gmap:G("Young Engineers Berlin Kreuzberg"),day:4},
+  {lat:52.508,lng:13.332,name:"Zoologischer Garten",cat:"itinerary",color:"#4A7C59",addr:"Hardenbergplatz 8, Charlottenburg",note:"⚠️ Tickets online. Zoo más antiguo de Alemania.",gmap:G("Zoologischer Garten Berlin Hardenbergplatz"),day:4},
+  {lat:52.5014,lng:13.3184,name:"Ku'damm — paseo",cat:"itinerary",color:"#4A7C59",addr:"Kurfürstendamm, Charlottenburg",note:"Día 4 · Gran bulevar del Berlín Oeste. 10 min caminando desde el Zoo.",gmap:G("Kurfurstendamm Berlin"),day:4},
+  {lat:52.5032,lng:13.3345,name:"KaDeWe — planta gourmet",cat:"itinerary",color:"#4A7C59",addr:"Tauentzienstrasse 21, Charlottenburg",note:"Día 4 · Planta gourmet piso 6. Cierra 20h.",gmap:G("KaDeWe Kaufhaus des Westens Tauentzienstrasse Berlin"),day:4},
+  {lat:52.5173,lng:13.4404,name:"Karl-Marx-Allee",cat:"itinerary",color:"#3A6B8A",addr:"Strausberger Platz, Friedrichshain",note:"Día 3 · Bulevar estalinista, 90m de ancho. Después de Marina Abramović.",gmap:G("Karl-Marx-Allee Strausberger Platz Berlin"),day:3},
+  {lat:52.5077,lng:13.452,name:"RAW-Gelände",cat:"itinerary",color:"#3A6B8A",addr:"Revaler Str. 99, Friedrichshain",note:"Día 3 · Skatepark, murales, bares underground.",gmap:G("RAW-Gelände Revaler Strasse 99 Friedrichshain Berlin"),day:3},
+  {lat:52.5427,lng:13.4027,name:"Mauerpark — Flea Market",cat:"itinerary",color:"#7B3FA0",addr:"Bernauer Str. 63-64, Prenzlauer Berg",note:"Dom · Flea market gigante + Bearpit Karaoke.",gmap:G("Mauerpark Berlin"),day:5},
+  {lat:52.5097,lng:13.3764,name:"The Upside Down Berlin",cat:"itinerary",color:"#7B3FA0",addr:"Alte Potsdamer Str. 7, Potsdamer Platz",note:"Dom · ~20 salas con ilusiones ópticas. 1,5h.",gmap:G("The Upside Down Berlin Potsdamer Platz"),day:5},
+  {lat:52.5106,lng:13.3726,name:"Cirque du Soleil ALIZÉ ⭐",cat:"itinerary",color:"#7B3FA0",addr:"Marlene-Dietrich-Platz 1",note:"⭐ ENTRADA RESERVADA. Dom 12 Jul 17:00h.",gmap:G("Marlene-Dietrich-Platz 1 Potsdamer Platz Berlin"),day:5},
+  {lat:52.5106,lng:13.4101,name:"Holzmarkt 25",cat:"itinerary",color:"#C8402A",addr:"Holzmarktstrasse 25, Friedrichshain",note:"Día 2 · Villa creativa cooperativa a orillas del Spree. Bares, comida, música. Gratis.",gmap:G("Holzmarkt 25 Berlin"),day:2},
+  {lat:52.5348,lng:13.4187,name:"JÓMO Restaurant — cena despedida",cat:"itinerary",color:"#7B3FA0",addr:"Rykestrasse 14, Prenzlauer Berg",note:"Dom · Cena de despedida. Cocina europea de autor. Reservar.",gmap:G("JÓMO Restaurant Rykestrasse 14 Berlin"),day:5},
+
+  // ── FUTURIUM & BOROS ──
+  {lat:52.5208,lng:13.3701,name:"Futurium",cat:"itinerary",color:"#E8C547",addr:"Alexanderufer 2, Mitte",note:"Día 1 · GRATIS · Museo interactivo sobre el futuro. Ocean Futures en julio. Abre hasta 20h.",gmap:G("Futurium Berlin Alexanderufer 2"),day:1},
+  {lat:52.4998,lng:13.3893,name:"Berlin Story Bunker",cat:"itinerary",color:"#7B3FA0",addr:"Schöneberger Str. 23A, Kreuzberg",note:"Día 5 · Búnker real WWII. Maqueta Führerbunker. Audioguía incluida. 2,5h.",gmap:G("Berlin Story Bunker Schöneberger Strasse Berlin"),day:5},
+
+  // ── MIMA & KÜCHE3 ──
+  {lat:52.4759,lng:13.4271,name:"MiMA Restaurant",cat:"eat",color:"#3A6B8A",addr:"Karl-Marx-Str. 55, Neukölln",note:"⭐ Nueva apertura · Cocina chipriota modernizada. Mezze, pescado, especias mediterráneas orientales.",gmap:G("MiMA Restaurant Karl-Marx-Strasse 55 Berlin Neukölln")},
+  {lat:52.4759,lng:13.4271,name:"Küche3",cat:"eat",color:"#3A6B8A",addr:"Karl-Marx-Str. 55, Neukölln",note:"⭐ Nueva apertura · Cocina siciliana con influencias berlinesas. Walk-in desde 18h.",gmap:G("Küche3 Karl-Marx-Strasse 55 Berlin Neukölln")},
+
+  // ── FUKAGAWA & DATSCHA ──
+  {lat:52.5344,lng:13.4228,name:"Fukagawa Ramen — Prenzlauer Berg",cat:"eat",color:"#E8C547",addr:"Wörther Str. 22, Prenzlauer Berg",note:"4.7★ Ramen japonés auténtico. A5-Wagyu, trufa, Tonkotsu. Cena Día 1. Reservar.",gmap:G("Fukagawa Ramen Wörther Strasse 22 Berlin Prenzlauer Berg")},
+  {lat:52.4897,lng:13.4017,name:"Fukagawa Ramen — Kreuzberg",cat:"eat",color:"#C8402A",addr:"Prinzessinnenstr. 17, Kreuzberg",note:"4.7★ Sucursal original. Mismo ramen de alto nivel. Reservar.",gmap:G("Fukagawa Ramen Prinzessinnenstrasse 17 Berlin Kreuzberg")},
+  {lat:52.5101,lng:13.4538,name:"Café Datscha",cat:"eat",color:"#7B3FA0",addr:"Gabriel-Max-Str. 1, Friedrichshain",note:"4.2★ Cocina rusa y del este europeo. Borscht, pelmeni. Cena Día 4.",gmap:G("Café Datscha Gabriel-Max-Strasse 1 Friedrichshain Berlin")},
+
+  // ── CAFÉS ──
+  {lat:52.5389,lng:13.4162,name:"Chestnut Coffee",cat:"cafe",color:"#E8C547",addr:"Kastanienallee 79",note:"4.9★ El mejor café de la calle del hotel.",gmap:G("Chestnut Coffee Kastanienallee 79 Berlin")},
+  {lat:52.5334,lng:13.4253,name:"Kaffee Momente",cat:"cafe",color:"#E8C547",addr:"Bötzowstrasse 21",note:"4.9★ El café con mejores reseñas del barrio.",gmap:G("Kaffee Momente Bötzowstrasse Berlin")},
+  {lat:52.541,lng:13.4203,name:"Schim:Pause",cat:"cafe",color:"#E8C547",addr:"Dunckerstrasse 85",note:"4.9★ El mejor french toast de Berlín.",gmap:G("Schim Pause Dunckerstrasse 85 Berlin")},
+  {lat:52.5399,lng:13.4082,name:"Bonanza Coffee Heroes",cat:"cafe",color:"#E8C547",addr:"Oderberger Str. 35",note:"4.2★ Specialty coffee de referencia en Berlín.",gmap:G("Bonanza Coffee Heroes Oderberger Strasse Berlin")},
+  {lat:52.524,lng:13.4008,name:"ACID Mitte",cat:"cafe",color:"#C8402A",addr:"Rosenthaler Str. 9, Mitte",note:"4.0★ Cardamom bun y Babka legendarios. Desayuno Día 2.",gmap:G("ACID Mitte Rosenthaler Strasse 9 Berlin")},
+  {lat:52.5266,lng:13.3929,name:"Cappuccino Grand Café",cat:"cafe",color:"#C8402A",addr:"Tucholskystrasse 36, Mitte",note:"4.7★ Brunch delicioso. Ambiente muy curado.",gmap:G("Cappuccino Grand Café Berlin")},
+  {lat:52.4898,lng:13.3876,name:"Coffee Circle Bergmann",cat:"cafe",color:"#C8402A",addr:"Bergmannstrasse 10, Kreuzberg",note:"4.8★ Sin wi-fi adrede. Presencia real.",gmap:G("Coffee Circle Bergmannstrasse 10 Berlin")},
+  {lat:52.489,lng:13.3863,name:"Barcomi's Kafferösterei",cat:"cafe",color:"#C8402A",addr:"Bergmannstrasse 21, Kreuzberg",note:"4.3★ Bagels caseros. Institución desde los 90s.",gmap:G("Barcomi's Kafferösterei Berlin")},
+  {lat:52.4801,lng:13.4354,name:"Nah am Wasser Gebaut",cat:"cafe",color:"#3A6B8A",addr:"Kiehlufer 55, Neukölln",note:"4.4★ Café junto al canal. Desayuno todo el día, zumos frescos, falafel bowl. Junto al Mercado Turco.",gmap:G("Nah am Wasser Gebaut Kiehlufer 55 Berlin Neukölln")},
+  {lat:52.4762,lng:13.4302,name:"Myxa Berlin",cat:"cafe",color:"#3A6B8A",addr:"Lenaustrasse 22, Neukölln",note:"4.6★ Cheesecake de pistacho extraordinario.",gmap:G("Myxa Berlin Lenaustrasse 22")},
+  {lat:52.4897,lng:13.4333,name:"Sorrel",cat:"cafe",color:"#3A6B8A",addr:"Pannierstrasse 40, Neukölln",note:"4.5★ Fusión de temporada. Brunch y cena.",gmap:G("Sorrel Pannierstrasse 40 Berlin")},
+  {lat:52.5057,lng:13.3225,name:"Der Kuchenladen",cat:"cafe",color:"#4A7C59",addr:"Kantstrasse 138, Charlottenburg",note:"4.7★ La pastelería más famosa de Charlottenburg.",gmap:G("Der Kuchenladen Kantstrasse Berlin")},
+  {lat:52.5066,lng:13.3305,name:"THE BARN Ku'damm",cat:"cafe",color:"#4A7C59",addr:"Kurfürstendamm 21, Charlottenburg",note:"4.7★ La tostadora de especialidad de Berlín.",gmap:G("The Barn coffee Kurfürstendamm 21 Berlin")},
+  {lat:52.5101,lng:13.4538,name:"Silo Coffee",cat:"cafe",color:"#7B3FA0",addr:"Gabriel-Max-Strasse 4, Friedrichshain",note:"4.5★ Pancakes de canela legendarios.",gmap:G("Silo Coffee Gabriel-Max-Strasse Berlin")},
+  {lat:52.5046,lng:13.4681,name:"Milja & Schäfa",cat:"cafe",color:"#7B3FA0",addr:"Sonntagstrasse 1, Friedrichshain",note:"4.7★ Brunch de culto. Solo cash.",gmap:G("Milja Schäfa Sonntagstrasse Berlin")},
+
+  // ── RESTAURANTS ──
+  {lat:52.5348,lng:13.4187,name:"Restaurant Pasternak",cat:"eat",color:"#E8C547",addr:"Knaackstrasse 22-24, Prenzlauer Berg",note:"4.8★ Cocina ruso-judía. Borscht, pato sous-vide. Reservar.",gmap:G("Restaurant Pasternak Knaackstrasse Berlin")},
+  {lat:52.5352,lng:13.4187,name:"JÓMO Restaurant",cat:"eat",color:"#E8C547",addr:"Rykestrasse 14, Prenzlauer Berg",note:"4.8★ Cocina europea de autor. Cena de despedida.",gmap:G("JÓMO Restaurant Rykestrasse 14 Berlin")},
+  {lat:52.5448,lng:13.4369,name:"Zur Haxe",cat:"eat",color:"#E8C547",addr:"Erich-Weinert-Str. 128, Prenzlauer Berg",note:"4.6★ La mejor Schweinshaxe del barrio. Solo efectivo.",gmap:G("Zur Haxe Berlin")},
+  {lat:52.5344,lng:13.4195,name:"Umami P-Berg",cat:"eat",color:"#E8C547",addr:"Knaackstrasse 16-18, Prenzlauer Berg",note:"4.6★ Vietnamita rápida y asequible.",gmap:G("Umami Prenzlauer Berg Berlin")},
+  {lat:52.5087,lng:13.4046,name:"Bocca Felice",cat:"eat",color:"#C8402A",addr:"Seydelstrasse 16, Mitte",note:"4.9★ Italiano de altísimo nivel.",gmap:G("Ristorante Bocca Felice Berlin")},
+  {lat:52.5173,lng:13.4022,name:"Zur Gerichtslaube",cat:"eat",color:"#C8402A",addr:"Poststrasse 28, Nikolaiviertel",note:"4.5★ El mejor del Nikolaiviertel.",gmap:G("Zur Gerichtslaube Poststrasse 28 Berlin")},
+  {lat:52.4894,lng:13.3836,name:"Mustafa's Gemüse Kebap",cat:"eat",color:"#3A6B8A",addr:"Mehringdamm 33, Kreuzberg",note:"4.2★ El döner más famoso de Berlín.",gmap:G("Mustafa's Gemüse Kebap Mehringdamm 33 Berlin")},
+  {lat:52.4983,lng:13.436,name:"Ristorante Leo e Pepe",cat:"eat",color:"#3A6B8A",addr:"Görlitzer Str. 63, Kreuzberg",note:"4.9★ Italiano pequeño y exquisito.",gmap:G("Ristorante Leo e Pepe Görlitzer Strasse Berlin")},
+  {lat:52.4923,lng:13.4184,name:"Fourty Years Kitchen",cat:"eat",color:"#3A6B8A",addr:"Dieffenbachstrasse 52, Kreuzberg",note:"4.8★ Shakshuka con yogur legendaria.",gmap:G("Fourty Years Kitchen Dieffenbachstrasse Berlin")},
+  {lat:52.499,lng:13.4455,name:"Burgermeister Schlesisches Tor",cat:"eat",color:"#3A6B8A",addr:"Oberbaumstrasse 8, Kreuzberg",note:"4.7★ El burger más famoso de Berlín bajo el viaducto del U-Bahn.",gmap:G("Burgermeister Schlesisches Tor Oberbaumstrasse Berlin")},
+  {lat:52.4897,lng:13.4336,name:"Kramer Restaurant",cat:"eat",color:"#3A6B8A",addr:"Pannierstrasse 41, Neukölln",note:"4.8★ Nivel Michelin sin estrella. Reservar.",gmap:G("Kramer Restaurant Pannierstrasse 41 Berlin")},
+  {lat:52.4745,lng:13.4272,name:"Restaurant DOHA",cat:"eat",color:"#3A6B8A",addr:"Hermannstrasse 70, Neukölln",note:"4.8★ El mejor steak de Neukölln.",gmap:G("Restaurant DOHA Hermannstrasse Berlin")},
+  {lat:52.464,lng:13.4444,name:"MABEL Restaurant-Bar",cat:"eat",color:"#3A6B8A",addr:"Karl-Marx-Str. 283, Neukölln",note:"4.8★ Cocina moderna con carácter y música.",gmap:G("MABEL Restaurant Bar Karl-Marx-Strasse Berlin")},
+  {lat:52.502,lng:13.3293,name:"Luardi Cucina della Mamma",cat:"eat",color:"#4A7C59",addr:"Meinekestrasse 24, Charlottenburg",note:"4.8★ El italiano más querido de Charlottenburg.",gmap:G("Luardi Cucina della Mamma Berlin")},
+  {lat:52.5054,lng:13.327,name:"Ottenthal",cat:"eat",color:"#4A7C59",addr:"Kantstrasse 153, Charlottenburg",note:"4.7★ Mejor Wiener Schnitzel de Berlín.",gmap:G("Ottenthal Restaurant Kantstrasse Berlin")},
+  {lat:52.5194,lng:13.4274,name:"A Mano",cat:"eat",color:"#7B3FA0",addr:"Strausberger Pl. 2, Friedrichshain",note:"4.8★ Italiano moderno sofisticado. Reservar.",gmap:G("A Mano restaurant Strausberger Platz Berlin")},
+  {lat:52.5124,lng:13.4484,name:"Trattoria Portofino",cat:"eat",color:"#7B3FA0",addr:"Gubener Str. 48, Friedrichshain",note:"4.7★ El italiano de barrio más querido.",gmap:G("Trattoria Portofino Gubener Strasse Berlin")},
+  {lat:52.5073,lng:13.4502,name:"Golden Fleece",cat:"eat",color:"#7B3FA0",addr:"Mainzer Str. 20, Friedrichshain",note:"4.7★ Cocina georgiana: khachapuri y khinkali.",gmap:G("Golden Fleece Georgian restaurant Mainzer Strasse Berlin")},
+
+  // ── SIGHTS ──
+  {lat:52.5163,lng:13.3777,name:"Puerta de Brandeburgo",cat:"sight",color:"#C8402A",addr:"Pariser Platz, Mitte",note:"4.7★ El símbolo de Berlín. GRATIS 24h.",gmap:G("Brandenburger Tor Pariser Platz Berlin")},
+  {lat:52.5169,lng:13.4019,name:"Museumsinsel",cat:"sight",color:"#C8402A",addr:"Museumsinsel, Mitte",note:"Patrimonio UNESCO. Cinco museos.",gmap:G("Museumsinsel Berlin")},
+  {lat:52.5219,lng:13.4133,name:"Torre de TV (Fernsehturm)",cat:"sight",color:"#C8402A",addr:"Alexanderplatz, Mitte",note:"La cúpula refleja una cruz. Ironía comunista.",gmap:G("Fernsehturm Berlin Alexanderplatz")},
+  {lat:52.5211,lng:13.3983,name:"Hackescher Markt",cat:"sight",color:"#C8402A",addr:"Hackescher Markt, Mitte",note:"La plaza más animada de Mitte. Hub de transporte.",gmap:G("Hackescher Markt Berlin")},
+  {lat:52.5075,lng:13.3862,name:"Checkpoint Charlie",cat:"sight",color:"#C8402A",addr:"Friedrichstrasse 43-45",note:"Paso fronterizo más famoso de la Guerra Fría. GRATIS.",gmap:G("Checkpoint Charlie Friedrichstrasse Berlin")},
+  {lat:52.4998,lng:13.3893,name:"Berlin Story Bunker",cat:"sight",color:"#C8402A",addr:"Schöneberger Str. 23A, Kreuzberg",note:"4.7★ Museo del nazismo en un búnker real de la WWII. 2,5-3h.",gmap:G("Berlin Story Bunker Schöneberger Strasse Berlin")},
+  {lat:52.505,lng:13.4397,name:"East Side Gallery",cat:"sight",color:"#7B3FA0",addr:"Mühlenstrasse, Friedrichshain",note:"GRATIS 24h. 1,3 km del Muro.",gmap:G("East Side Gallery Berlin")},
+  {lat:52.5019,lng:13.4457,name:"Oberbaumbrücke",cat:"sight",color:"#7B3FA0",addr:"Oberbaumstrasse, Friedrichshain",note:"El puente más bonito de Berlín.",gmap:G("Oberbaumbrücke Berlin")},
+  {lat:52.5077,lng:13.452,name:"RAW-Gelände",cat:"sight",color:"#7B3FA0",addr:"Revaler Str. 99, Friedrichshain",note:"4.4★ Skate park, murales, clubs, flea market domingos.",gmap:G("RAW-Gelände Revaler Strasse Berlin")},
+  {lat:52.5073,lng:13.4517,name:"Urban Spree",cat:"sight",color:"#7B3FA0",addr:"Revaler Str. 99, Friedrichshain",note:"4.3★ Galería de arte urbano y espacio creativo. Mercado de diseño fines de semana.",gmap:G("Urban Spree Berlin Revaler Strasse")},
+  {lat:52.5071,lng:13.4514,name:"Cassiopeia",cat:"sight",color:"#7B3FA0",addr:"Revaler Str. 99, Friedrichshain",note:"4.2★ Club alternativo con skatepark propio. Underground auténtico.",gmap:G("Cassiopeia Club Berlin Revaler Strasse")},
+  {lat:52.5183,lng:13.4418,name:"Computerspiele Museum",cat:"sight",color:"#7B3FA0",addr:"Karl-Marx-Allee 93A, Friedrichshain",note:"4.4★ El primer museo permanente de videojuegos del mundo. Tu hijo lo va a amar.",gmap:G("Computerspiele Museum Berlin Karl-Marx-Allee")},
+  {lat:52.528,lng:13.4364,name:"Volkspark — Märchenbrunnen",cat:"sight",color:"#7B3FA0",addr:"Volkspark Friedrichshain",note:"Figuras de los cuentos Grimm en mármol.",gmap:G("Märchenbrunnen Volkspark Friedrichshain Berlin")},
+  {lat:52.4882,lng:13.38,name:"Viktoriapark",cat:"sight",color:"#3A6B8A",addr:"Katzbachstrasse, Kreuzberg",note:"4.5★ Cascada artificial y vistas panorámicas.",gmap:G("Viktoriapark Kreuzberg Berlin")},
+  {lat:52.4894,lng:13.3882,name:"Gropius Bau",cat:"sight",color:"#3A6B8A",addr:"Niederkirchnerstr. 7, Kreuzberg",note:"Uno de los mejores espacios expositivos de Berlín.",gmap:G("Gropius Bau Berlin")},
+  {lat:52.4715,lng:13.4382,name:"Körnerpark",cat:"sight",color:"#3A6B8A",addr:"Schierker Str. 8, Neukölln",note:"4.6★ El jardín secreto más bello de Berlín.",gmap:G("Körnerpark Neukölln Berlin")},
+  {lat:52.4749,lng:13.4006,name:"Tempelhofer Feld",cat:"sight",color:"#3A6B8A",addr:"Tempelhofer Damm, Neukölln",note:"4.6★ Aeropuerto convertido en parque enorme.",gmap:G("Tempelhofer Feld Berlin")},
+  {lat:52.5427,lng:13.4027,name:"Mauerpark",cat:"sight",color:"#E8C547",addr:"Bernauer Str. 63-64, Prenzlauer Berg",note:"4.5★ Flea market domingos + Bearpit Karaoke.",gmap:G("Mauerpark Berlin")},
+  {lat:52.5387,lng:13.4162,name:"Prater Biergarten",cat:"sight",color:"#E8C547",addr:"Kastanienallee 7-9, Prenzlauer Berg",note:"4.3★ El biergarten más antiguo de Berlín (1837). Dom abre 12h.",gmap:G("Prater Biergarten Kastanienallee 7 Berlin")},
+  {lat:52.5209,lng:13.2956,name:"Schloss Charlottenburg",cat:"sight",color:"#4A7C59",addr:"Spandauer Damm 10-22",note:"4.6★ Jardines GRATUITOS. Interior €12.",gmap:G("Schloss Charlottenburg Berlin")},
+  {lat:52.5048,lng:13.3351,name:"Kaiser-Wilhelm-Gedächtniskirche",cat:"sight",color:"#4A7C59",addr:"Breitscheidplatz, Charlottenburg",note:"4.6★ La iglesia en ruinas — 'el diente hueco'.",gmap:G("Kaiser Wilhelm Gedächtniskirche Berlin")},
+  {lat:52.5066,lng:13.3305,name:"C/O Berlin — Fotografía",cat:"sight",color:"#4A7C59",addr:"Hardenbergstrasse 22-24, Charlottenburg",note:"4.6★ Mejor espacio de fotografía contemporánea.",gmap:G("CO Berlin Amerika Haus Hardenbergstrasse")},
+  {lat:52.5097,lng:13.3764,name:"The Upside Down Berlin",cat:"sight",color:"#7B3FA0",addr:"Alte Potsdamer Str. 7, Potsdamer Platz",note:"4.8★ ~20 salas con ilusiones ópticas. Dom 10-18h.",gmap:G("The Upside Down Berlin Potsdamer Platz")},
+  {lat:52.508,lng:13.3321,name:"LEGOLAND Discovery Centre",cat:"sight",color:"#4A7C59",addr:"Potsdamer Str. 4, Charlottenburg",note:"3.7★ MiniLand con Berlín en LEGO. Comprar tickets online.",gmap:G("LEGOLAND Discovery Centre Berlin Potsdamer Strasse")},
+
+  // ── SHOPS ──
+  {lat:52.524,lng:13.4024,name:"Hackesche Höfe",cat:"shop",color:"#C8402A",addr:"Rosenthaler Str. 40, Mitte",note:"8 patios art nouveau con tiendas de diseño.",gmap:G("Hackesche Höfe Berlin")},
+  {lat:52.5157,lng:13.4003,name:"Mongolian Green Labels",cat:"shop",color:"#C8402A",addr:"Am Nußbaum 8, Nikolaiviertel",note:"5.0★ Cachemira y lana de yak de Mongolia. Calidad excepcional.",gmap:G("Mongolian Green Labels Am Nußbaum 8 Berlin")},
+  {lat:52.5389,lng:13.4153,name:"Fein und Ripp",cat:"shop",color:"#E8C547",addr:"Kastanienallee 91, Prenzlauer Berg",note:"Ropa de caballero vintage de principios del s. XX.",gmap:G("Fein und Ripp Kastanienallee 91 Berlin")},
+  {lat:52.4892,lng:13.3944,name:"Marheineke Markthalle",cat:"shop",color:"#3A6B8A",addr:"Marheinekeplatz 15, Kreuzberg",note:"4.4★ Mercado cubierto gourmet. Lu-Vi 8-20h.",gmap:G("Marheineke Markthalle Berlin")},
+  {lat:52.492,lng:13.4365,name:"Dedstrange Vintage",cat:"shop",color:"#3A6B8A",addr:"Muskauer Str. 24, Kreuzberg",note:"4.9★ El mejor vintage de Kreuzberg.",gmap:G("Dedstrange Vintage Muskauer Strasse Berlin")},
+  {lat:52.5137,lng:13.4628,name:"Galactic Supermarket Records",cat:"shop",color:"#7B3FA0",addr:"Petersburger Str. 89, Friedrichshain",note:"4.7★ Jazz, blues, prog, krautrock. Vi-Sáb 12-20h.",gmap:G("Galactic Supermarket Records Berlin")},
+];
+
+// ── TRANSPORT ─────────────────────────────────────────────────────────────────
+const TRANSPORT={
+  tickets:{
+    title:"🎟️ Tickets & WelcomeCard",
+    items:[
+      {icon:"🟡",text:"Comprá la Berlin WelcomeCard AB al llegar al aeropuerto. Cubre U-Bahn, S-Bahn, tram y bus en zonas A+B durante todo el viaje."},
+      {icon:"📱",text:"La app BVG Fahrinfo te da horarios en tiempo real. Descargala antes de salir — funciona offline para ver mapas de líneas."},
+      {icon:"🚋",text:"El Tram M1 sale de la puerta del hotel (Kastanienallee) y llega al centro en 12 min sin transbordo."},
+      {icon:"💡",text:"En el U-Bahn validá el ticket antes de bajar a los andenes. Los controladores no avisan."},
+    ]
+  },
+  flights:{
+    title:"✈️ Vuelo de llegada",
+    items:[
+      {icon:"🛫",text:"Ryanair FR 2528 · Madrid (MAD) → Berlín (BER)"},
+      {icon:"🕙",text:"Sale Madrid 09:55h · Llega BER 12:55h · Mié 8 Jul"},
+      {icon:"📋",text:"Confirmación: D83QYE"},
+    ]
+  },
+  train:{
+    title:"🚂 Tren de salida a Múnich",
+    items:[
+      {icon:"🚂",text:"Deutsche Bahn 1503 · Berlin Hbf → München Hbf"},
+      {icon:"🕖",text:"Sale Berlin Hbf 07:36h · Llega München 11:43h · Lun 13 Jul · Duración 4h 7min"},
+      {icon:"📋",text:"Confirmación: 224263256219"},
+      {icon:"⏰",text:"Salir del hotel a las 06:30h. S-Bahn desde Schönhauser Allee → Berlin Hbf: ~20 min."},
+    ]
+  },
+  ber:{
+    title:"🛬 BER → Hotel (Día 1)",
+    steps:[
+      {line:"S9",from:"BER Terminal 1-2",to:"Ostkreuz",time:"22 min",walk:""},
+      {line:"S41/S42",from:"Ostkreuz",to:"Schönhauser Allee",time:"12 min",walk:""},
+      {line:"Tram M1",from:"Schönhauser Allee",to:"Kastanienallee (hotel)",time:"8 min",walk:""},
+    ],
+    total:"~55 min total · Alternativa: taxi directo ~35 min, ~45€"
+  },
+  days:[
+    {day:"Día 1 · Mar 8 Jul",color:"#E8C547",routes:[
+      {from:"BER Aeropuerto",to:"Hotel Kastanienhof",how:"🚇 S9 → Ostkreuz → S41 → Schönhauser Allee → 🚋 M1",time:"~55 min"},
+      {from:"Hotel",to:"Kastanienallee / Kollwitzplatz",how:"🚶 Caminando",time:"5 min"},
+      {from:"Kollwitzplatz",to:"Alexanderplatz",how:"🚋 Tram M1",time:"15 min"},
+      {from:"Alexanderplatz",to:"Nikolaiviertel",how:"🚶 Caminando junto al Spree",time:"15 min"},
+      {from:"Nikolaiviertel",to:"Futurium",how:"🚶 Caminando junto al Spree",time:"15 min"},
+      {from:"Futurium",to:"Fukagawa Ramen",how:"🚇 U2 → Senefelderplatz",time:"~20 min"},
+    ]},
+    {day:"Día 2 · Mié 9 Jul",color:"#C8402A",routes:[
+      {from:"Hotel",to:"ACID Mitte",how:"🚋 Tram M1 → Rosenthaler Platz",time:"12 min"},
+      {from:"ACID Mitte",to:"Neues Museum",how:"🚶 Caminando",time:"12 min"},
+      {from:"Neues Museum",to:"Museumsinsel / Spree",how:"🚶 Caminando",time:"5 min"},
+      {from:"Museumsinsel",to:"Hackesche Höfe",how:"🚶 Caminando",time:"8 min"},
+      {from:"Hackesche Höfe",to:"Puerta de Brandeburgo",how:"🚶 Caminando por Unter den Linden",time:"15 min"},
+      {from:"Puerta de Brandeburgo",to:"East Side Gallery",how:"🚇 S1/S2 → Ostbahnhof + 🚶 10 min",time:"~30 min"},
+      {from:"East Side Gallery",to:"Holzmarkt 25",how:"🚶 Caminando",time:"5 min"},
+      {from:"Holzmarkt 25",to:"Cena Friedrichshain",how:"🚶 Caminando",time:"10 min"},
+    ]},
+    {day:"Día 3 · Vie 10 Jul",color:"#3A6B8A",routes:[
+      {from:"Hotel",to:"Neukölln Reuterkiez",how:"🚋 Tram M1 → Rosenthaler Pl. → 🚇 U8 → Boddinstr.",time:"~35 min"},
+      {from:"Reuterkiez",to:"Mercado Turco (Paul-Lincke-Ufer)",how:"🚶 Caminando",time:"15 min"},
+      {from:"Mercado Turco",to:"Mustafa's Gemüse Kebap",how:"🚶 Caminando",time:"12 min"},
+      {from:"Mustafa's",to:"Checkpoint Charlie",how:"🚶 Caminando",time:"8 min"},
+      {from:"Checkpoint Charlie",to:"Gropius Bau",how:"🚶 Caminando",time:"5 min"},
+      {from:"Gropius Bau",to:"Karl-Marx-Allee",how:"🚇 U2 desde Stadtmitte → Strausberger Platz",time:"10 min"},
+      {from:"Karl-Marx-Allee",to:"RAW-Gelände",how:"🚶 Caminando",time:"15 min"},
+      {from:"RAW-Gelände",to:"Café Datscha",how:"🚶 Caminando",time:"5 min"},
+    ]},
+    {day:"Día 4 · Sáb 11 Jul",color:"#4A7C59",routes:[
+      {from:"Hotel",to:"Young Engineers (Kreuzberg)",how:"🚋 Tram M1 → Rosenthaler Pl. → 🚇 U8 → Kottbusser Tor",time:"~35 min"},
+      {from:"Young Engineers",to:"Almuerzo Kreuzberg",how:"🚶 Caminando",time:"10-15 min"},
+      {from:"Kreuzberg",to:"Zoologischer Garten",how:"🚇 U1 → Kurfürstendamm → U9 → Zoo",time:"~25 min"},
+      {from:"Zoo",to:"Ku'damm",how:"🚶 Caminando",time:"10 min"},
+      {from:"Ku'damm",to:"KaDeWe",how:"🚶 Caminando",time:"5 min"},
+      {from:"KaDeWe",to:"Cena Charlottenburg (Kantstrasse)",how:"🚶 Caminando",time:"10 min"},
+    ]},
+    {day:"Día 5 · Dom 12 Jul",color:"#7B3FA0",routes:[
+      {from:"Hotel",to:"Mauerpark",how:"🚶 Caminando",time:"8 min"},
+      {from:"Mauerpark",to:"Almuerzo Prenzlauer Berg",how:"🚶 Caminando",time:"10 min"},
+      {from:"Prenzlauer Berg",to:"Berlin Story Bunker",how:"🚋 Tram M1 → S-Bahn Schönhauser Allee → S1 → Anhalter Bahnhof",time:"~25 min"},
+      {from:"Berlin Story Bunker",to:"Potsdamer Platz",how:"🚇 S1 desde Anhalter Bahnhof → Potsdamer Platz",time:"5 min"},
+      {from:"Potsdamer Platz",to:"Cirque du Soleil",how:"🚶 Caminando al Marlene-Dietrich-Platz",time:"5 min"},
+      {from:"Cirque du Soleil",to:"JÓMO Restaurant",how:"🚋 S-Bahn Potsdamer Platz → Schönhauser Allee → 🚋 M2 → Rykestrasse",time:"~25 min"},
+      {from:"JÓMO",to:"Hotel",how:"🚶 Caminando",time:"5 min"},
+      {from:"Hotel",to:"Berlin Hbf (día 13)",how:"🚶 → Schönhauser Allee → 🚇 S-Bahn → Berlin Hbf",time:"~20 min · Salir 06:30h"},
+    ]},
+  ]
+};
+
+function rTransport(){
+  const t=TRANSPORT;
+  let html=`
+  <div style="background:#0c0c0c;border:1px solid #1e1a0a;border-radius:12px;padding:13px 16px;margin-bottom:14px">
+    <div style="font-size:9px;color:#E8C547;font-family:'Space Mono',monospace;letter-spacing:.1em;margin-bottom:10px">${t.flights.title}</div>
+    ${t.flights.items.map(i=>`<div style="display:flex;gap:10px;margin-bottom:6px"><span style="font-size:16px;flex-shrink:0">${i.icon}</span><div style="font-size:12px;color:#999;line-height:1.6">${i.text}</div></div>`).join("")}
+  </div>
+  <div style="background:#0c0c0c;border:1px solid #1a1a1a;border-radius:12px;padding:13px 16px;margin-bottom:14px">
+    <div style="font-size:9px;color:#C8402A;font-family:'Space Mono',monospace;letter-spacing:.1em;margin-bottom:10px">${t.train.title}</div>
+    ${t.train.items.map(i=>`<div style="display:flex;gap:10px;margin-bottom:6px"><span style="font-size:16px;flex-shrink:0">${i.icon}</span><div style="font-size:12px;color:#999;line-height:1.6">${i.text}</div></div>`).join("")}
+  </div>
+  <div style="background:#0c0c0c;border:1px solid #181818;border-radius:12px;padding:13px 16px;margin-bottom:14px">
+    <div style="font-size:9px;color:#E8C547;font-family:'Space Mono',monospace;letter-spacing:.1em;margin-bottom:10px">${t.tickets.title}</div>
+    ${t.tickets.items.map(i=>`<div style="display:flex;gap:10px;margin-bottom:7px"><span style="font-size:16px;flex-shrink:0">${i.icon}</span><div style="font-size:12px;color:#999;line-height:1.6">${i.text}</div></div>`).join("")}
+  </div>
+  <div style="background:#0c0c0c;border:1px solid #181818;border-radius:12px;padding:13px 16px;margin-bottom:14px">
+    <div style="font-size:9px;color:#E8C547;font-family:'Space Mono',monospace;letter-spacing:.1em;margin-bottom:10px">🛬 ${t.ber.title}</div>
+    ${t.ber.steps.map((s,i)=>`
+    <div style="display:flex;gap:10px;margin-bottom:8px;align-items:flex-start">
+      <div style="background:#E8C54722;border:1px solid #E8C54766;border-radius:6px;padding:2px 7px;font-size:10px;font-family:'Space Mono',monospace;color:#E8C547;flex-shrink:0;white-space:nowrap">${s.line}</div>
+      <div style="flex:1">
+        <div style="font-size:12px;color:#ccc">${s.from} → ${s.to}</div>
+        <div style="font-size:10.5px;color:#555;font-family:'Space Mono',monospace">${s.time}</div>
+      </div>
+    </div>`).join("")}
+    <div style="font-size:11px;color:#666;border-top:1px solid #1a1a1a;padding-top:9px;margin-top:4px">${t.ber.total}</div>
+  </div>
+  ${t.days.map(d=>`
+  <div style="background:#0c0c0c;border:1px solid #181818;border-radius:12px;padding:13px 16px;margin-bottom:12px">
+    <div style="font-size:9px;color:${d.color};font-family:'Space Mono',monospace;letter-spacing:.1em;margin-bottom:10px">📍 ${d.day}</div>
+    ${d.routes.map(r=>`
+    <div style="display:flex;gap:8px;margin-bottom:9px;padding-bottom:9px;border-bottom:1px solid #141414;align-items:flex-start">
+      <div style="flex:1">
+        <div style="font-size:11.5px;color:#ccc;margin-bottom:2px">${r.from} → <span style="color:${d.color}">${r.to}</span></div>
+        <div style="font-size:11px;color:#777">${r.how}</div>
+      </div>
+      <div style="flex-shrink:0;font-size:10px;font-family:'Space Mono',monospace;color:#555;white-space:nowrap;padding-top:2px">${r.time}</div>
+    </div>`).join("")}
+  </div>`).join("")}
+  <div style="height:16px"></div>`;
+  document.getElementById("tp").innerHTML=html;
+}
+let aTab="itinerary",openDay=1,curNbh=null,nbhSec="streets",flipped={},done={};
+let mapInitialized=false,leafMap=null,allMarkers=[],currentFilter="all";
+const SL={streets:"Calles",cafes:"Cafés",restaurants:"Comer",shops:"Tiendas",sights:"Ver"};
+
+// ── HELPERS ───────────────────────────────────────────────────────────────────
+const mb=(url,color,lbl="📍 Maps")=>url?`<a href="${url}" target="_blank" class="mb" style="color:${color};border:1px solid ${color}66">${lbl}</a>`:"";
+
+// ── DAYS ──────────────────────────────────────────────────────────────────────
+function rDays(){
+  document.getElementById("days").innerHTML=DAYS.map(d=>`
+  <div class="card">
+    <button class="ch" style="background:${openDay===d.id?'#121212':'#0c0c0c'}" onclick="tDay(${d.id})">
+      <span style="font-size:26px">${d.emoji}</span>
+      <div style="flex:1">
+        <div style="font-size:9px;font-family:'Space Mono',monospace;color:${d.color};letter-spacing:.12em;margin-bottom:3px">DÍA ${d.id} · ${d.date}</div>
+        <div style="font-size:13.5px;font-family:'Playfair Display',Georgia,serif;color:#e8e8e8;line-height:1.3">${d.title}</div>
+      </div>
+      <span style="color:#333;font-size:22px;transform:${openDay===d.id?'rotate(90deg)':'none'};transition:transform .2s">›</span>
+    </button>
+    ${openDay===d.id?`<div class="cb">${d.stops.map((s,i)=>`
+      <div class="sr">
+        <div class="sc">
+          <div class="st" style="color:${d.color}">${s.time}</div>
+          <div style="font-size:17px">${s.type}</div>
+          ${i<d.stops.length-1?'<div class="sl"></div>':""}
+        </div>
+        <div style="flex:1">
+          <div class="sh">
+            <div class="sn">${s.place}</div>
+            ${mb(s.map,d.color)}
+          </div>
+          <div class="sa">${s.address}</div>
+          <div class="sno">${s.note}</div>
+        </div>
+      </div>`).join("")}</div>`:""}
+  </div>`).join("");
+}
+function tDay(id){openDay=openDay===id?null:id;rDays();}
+
+// ── NEIGHBORHOODS ─────────────────────────────────────────────────────────────
+function rNbhList(){
+  document.getElementById("nl").classList.remove("hid");
+  document.getElementById("nd").classList.remove("on");
+  document.getElementById("nd").innerHTML="";
+  document.getElementById("nc").innerHTML=NBH.map(n=>`
+  <button class="nc" onclick="oNbh('${n.id}')">
+    <span style="font-size:30px">${n.emoji}</span>
+    <div style="flex:1">
+      <div style="font-size:15px;font-family:'Playfair Display',Georgia,serif;color:#e8e8e8;margin-bottom:3px">${n.name}</div>
+      <div style="font-size:11px;color:#555;line-height:1.5">${n.tagline}</div>
+    </div>
+    <div class="na" style="background:${n.color}"></div>
+  </button>`).join("");
+}
+function oNbh(id){
+  curNbh=NBH.find(n=>n.id===id);
+  const sects=["streets","cafes","restaurants","shops","sights"];
+  nbhSec=sects.find(s=>curNbh[s]&&curNbh[s].length)||"sights";
+  document.getElementById("nl").classList.add("hid");
+  rNbhDetail();
+  document.getElementById("content").scrollTop=0;
+}
+function rNbhDetail(){
+  const n=curNbh;
+  const sects=["streets","cafes","restaurants","shops","sights"].filter(s=>n[s]&&n[s].length>0);
+  document.getElementById("nd").classList.add("on");
+  document.getElementById("nd").innerHTML=`
+  <div class="ndh">
+    <button class="bk" style="color:${n.color}" onclick="rNbhList()">‹</button>
+    <div>
+      <div style="font-size:9px;color:${n.color};font-family:'Space Mono',monospace;letter-spacing:.12em">${n.emoji} BARRIO</div>
+      <div style="font-size:17px;font-family:'Playfair Display',Georgia,serif;color:#e8e8e8">${n.name}</div>
+    </div>
+  </div>
+  <div style="padding:14px 14px 0">
+    <div class="vb" style="border-left-color:${n.color}">
+      <div style="font-size:12px;color:#999;line-height:1.7;font-style:italic">${n.vibe}</div>
+    </div>
+    <div class="cb2">
+      <div class="sl2" style="color:#484848">💡 CURIOSIDAD</div>
+      <div style="font-size:11.5px;color:#888;line-height:1.7">${n.curiosity}</div>
+    </div>
+    ${n.german_tip?`<div class="gb" style="border-color:${n.color}33">
+      <div class="sl2" style="color:${n.color}">🗣️ ALEMÁN AQUÍ</div>
+      <div style="font-size:11.5px;color:#999;line-height:1.7;font-style:italic">${n.german_tip}</div>
+    </div>`:""}
+    <div class="stabs">${sects.map(s=>`<button class="stab${s===nbhSec?' active':''}" style="${s===nbhSec?`border-color:${n.color};background:${n.color}1a;color:${n.color}`:''}" onclick="sSec('${s}')">${SL[s]}</button>`).join("")}</div>
+    <div>${(n[nbhSec]||[]).map(item=>`
+      <div class="ic">
+        <div class="ih">
+          <div class="in">${item.name}</div>
+          <div class="im">
+            ${item.stars?`<div class="is" style="color:${n.color}">${item.stars}</div>`:""}
+            ${mb(item.map,n.color,"📍")}
+          </div>
+        </div>
+        ${item.address?`<div class="ia">${item.address}</div>`:""}
+        <div class="id">${item.desc}</div>
+      </div>`).join("")}</div>
+    <div style="height:16px"></div>
+  </div>`;
+}
+function sSec(s){nbhSec=s;rNbhDetail();document.getElementById("content").scrollTop=0;}
+
+// ── MAP ───────────────────────────────────────────────────────────────────────
+const CAT_ICONS={
+  itinerary:{symbol:"★",label:"ITINERARIO"},
+  eat:{symbol:"◆",label:"COMER"},
+  cafe:{symbol:"●",label:"CAFÉ"},
+  sight:{symbol:"▲",label:"VER"},
+  shop:{symbol:"■",label:"TIENDA"},
+};
+
+function makeIcon(pin){
+  const isMain=pin.cat==="itinerary";
+  const size=isMain?36:28;
+  const colors={itinerary:pin.color,eat:"#E86A3A",cafe:"#C8A547",sight:"#4A8AC8",shop:"#9B6BD4"};
+  const bg=colors[pin.cat]||pin.color;
+  return L.divIcon({
+    className:"",
+    html:`<div style="width:${size}px;height:${size}px;border-radius:50%;background:${bg};display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.6);cursor:pointer;border:2px solid rgba(255,255,255,.15)"><svg width="${size*.55}" height="${size*.55}" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4.5" fill="rgba(0,0,0,.35)"/><text x="5" y="7" text-anchor="middle" font-size="6" fill="white" font-family="Arial">${CAT_ICONS[pin.cat]?.symbol||"●"}</text></svg></div>`,
+    iconSize:[size,size],
+    iconAnchor:[size/2,size/2],
+    popupAnchor:[0,-(size/2+8)],
+  });
+}
+
+function popupHTML(pin){
+  const catLabels={itinerary:"📅 ITINERARIO",eat:"🍽 COMER",cafe:"☕ CAFÉ",sight:"👁 VER",shop:"🛍 TIENDA"};
+  const dayLabel=pin.day?` · DÍA ${pin.day}`:"";
+  return `<div class="mpop">
+    <div class="mpop-bar" style="background:${pin.color}"></div>
+    <div class="mpop-cat" style="color:${pin.color}">${catLabels[pin.cat]||"📍"}${dayLabel}</div>
+    <div class="mpop-name">${pin.name}</div>
+    ${pin.addr?`<div class="mpop-addr">${pin.addr}</div>`:""}
+    <div class="mpop-note">${pin.note}</div>
+    <a href="${pin.gmap}" target="_blank" class="mpop-btn" style="color:${pin.color};border-color:${pin.color}66">📍 Abrir en Maps</a>
+  </div>`;
+}
+
+function initMap(){
+  if(mapInitialized)return;
+  mapInitialized=true;
+  // slight delay so tab is visible and div has size
+  setTimeout(()=>{
+    leafMap=L.map("map",{
+      center:[52.505,13.405],
+      zoom:12,
+      zoomControl:true,
+    });
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{
+      maxZoom:19,
+      attribution:"© OpenStreetMap"
+    }).addTo(leafMap);
+
+    PINS.forEach(pin=>{
+      const marker=L.marker([pin.lat,pin.lng],{icon:makeIcon(pin)})
+        .addTo(leafMap)
+        .bindPopup(popupHTML(pin),{maxWidth:280,minWidth:200});
+      marker._pinData=pin;
+      allMarkers.push(marker);
+    });
+
+    // Hotel special marker
+    const hotelMarker=L.marker([52.5402,13.4183],{icon:L.divIcon({
+      className:"",
+      html:`<div style="width:42px;height:42px;border-radius:50%;background:#E8C547;display:flex;align-items:center;justify-content:center;box-shadow:0 0 16px #E8C54799;border:2px solid rgba(255,255,255,.2)"><svg width="22" height="22" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4.5" fill="rgba(0,0,0,.3)"/><text x="5" y="7.2" text-anchor="middle" font-size="5.5" fill="white" font-family="Arial" font-weight="bold">H</text></svg></div>`,
+      iconSize:[42,42],iconAnchor:[21,21],popupAnchor:[0,-30],
+    })}).addTo(leafMap)
+      .bindPopup(`<div class="mpop"><div class="mpop-bar" style="background:#E8C547"></div><div class="mpop-cat" style="color:#E8C547">🏨 TU BASE</div><div class="mpop-name">Hotel Kastanienhof</div><div class="mpop-addr">Kastanienallee 65, Prenzlauer Berg</div><div class="mpop-note">Tu hotel para los 5 días. Tram M1 en la puerta.</div><a href="${G("Hotel Kastanienhof Kastanienallee 65 Berlin")}" target="_blank" class="mpop-btn" style="color:#E8C547;border-color:#E8C54766">📍 Abrir en Maps</a></div>`,{maxWidth:280});
+    allMarkers.push(hotelMarker);
+
+    leafMap.invalidateSize();
+  },120);
+}
+
+function setFilter(f){
+  currentFilter=f;
+  document.querySelectorAll(".mf").forEach(b=>{
+    b.classList.toggle("on",b.dataset.filter===f);
+  });
+  allMarkers.forEach(m=>{
+    if(!m._pinData){return;} // hotel always visible
+    const show=f==="all"||m._pinData.cat===f;
+    if(show) m.addTo(leafMap);
+    else leafMap.removeLayer(m);
+  });
+}
+
+// ── PHRASES ───────────────────────────────────────────────────────────────────
+function rPhrases(){
+  document.getElementById("pc").innerHTML=PHRASES.map((p,i)=>`
+  <button class="pc${flipped[i]?' fl':''}" onclick="fPhrase(${i})">
+    <div class="px">${p.context}</div>
+    <div class="pd">${p.phrase}</div>
+    ${flipped[i]?`<div class="pt">${p.translation}</div>`:`<div class="ph">tocar para ver traducción →</div>`}
+  </button>`).join("");
+}
+function fPhrase(i){flipped[i]=!flipped[i];rPhrases();}
+
+// ── CHECKLIST ─────────────────────────────────────────────────────────────────
+function rChecklist(){
+  document.getElementById("cc").innerHTML=`
+  <div style="margin-bottom:18px">
+    <div class="sec-lbl" style="color:#E8C547">✅ YA TENÉS ENTRADA</div>
+    ${RES.ready.map(r=>`<div class="ri"><span style="font-size:22px">${r.icon}</span><div><div style="font-size:13.5px;color:#b8e8b8;font-family:'Playfair Display',Georgia,serif">${r.name}</div><div style="font-size:10.5px;color:#3d6e3d;margin-top:3px">${r.note}</div></div></div>`).join("")}
+  </div>
+  <div style="margin-bottom:18px">
+    <div class="sec-lbl" style="color:#C8402A">⚠️ PENDIENTE DE RESERVAR</div>
+    ${RES.pending.map((r,i)=>`
+    <div class="ci${done[i]?' dn':''}" onclick="tCheck(${i})">
+      <div class="cb3${done[i]?' dn':''}">${done[i]?'✓':''}</div>
+      <span style="font-size:20px;flex-shrink:0">${r.icon}</span>
+      <div style="flex:1">
+        <div style="font-size:13.5px;color:${done[i]?'#555':'#e0e0e0'};font-family:'Playfair Display',Georgia,serif;text-decoration:${done[i]?'line-through':'none'}">${r.name}</div>
+        <div style="font-size:10px;color:#444;font-family:'Space Mono',monospace;margin-top:2px">${r.url}</div>
+        <div style="font-size:11px;color:#555;margin-top:4px;line-height:1.5">${r.note}</div>
+      </div>
+    </div>`).join("")}
+  </div>
+  <div class="ib">
+    <div style="font-size:9px;color:#E8C547;font-family:'Space Mono',monospace;letter-spacing:.1em;margin-bottom:8px">🚇 TRANSPORTE</div>
+    <div style="font-size:12px;color:#777;line-height:1.7">Comprá la <span style="color:#E8C547">Berlin WelcomeCard AB</span> para todo el viaje. Cubre U-Bahn, S-Bahn, tram y bus. El tram <span style="color:#E8C547">M1</span> sale de la puerta del hotel.</div>
+    <div class="idv">
+      <div style="font-size:9px;color:#C8402A;font-family:'Space Mono',monospace;letter-spacing:.1em;margin-bottom:8px">🚂 TREN 13 JUL → MÚNICH</div>
+      <div style="font-size:12px;color:#777;line-height:1.7">Sale a las <span style="color:#C8402A">7:20h</span> desde <span style="color:#C8402A">Berlin Hbf</span>. En S-Bahn desde Prenzlauer Berg: ~20 min. Salir del hotel a las <span style="color:#C8402A">6:00h</span>. Preparar valijas la noche del 12 antes del Cirque.</div>
+    </div>
+    <div class="idv">
+      <div style="font-size:9px;color:#3A6B8A;font-family:'Space Mono',monospace;letter-spacing:.1em;margin-bottom:8px">👦 DESAFÍO ALEMÁN</div>
+      <div style="font-size:12px;color:#777;line-height:1.7">Pedir cada comida en alemán · Leer carteles del U-Bahn · Leer el menú antes de pedir · Märchenbrunnen: nombrar los cuentos Grimm · Preguntarle algo a un habitante del barrio.</div>
+    </div>
+  </div>
+  <div style="height:16px"></div>`;
+}
+function tCheck(i){done[i]=!done[i];rChecklist();}
+
+// ── TAB SWITCH ────────────────────────────────────────────────────────────────
+function sTab(tab){
+  aTab=tab;
+  document.querySelectorAll(".tab").forEach(el=>el.classList.remove("on"));
+  document.querySelectorAll(".tb").forEach(el=>el.classList.remove("on"));
+  document.getElementById("tab-"+tab).classList.add("on");
+  document.querySelector(`[data-tab="${tab}"]`).classList.add("on");
+  if(tab!=="map") document.getElementById("content").scrollTop=0;
+  if(tab==="neighborhoods") rNbhList();
+  if(tab==="map") initMap();
+  if(tab==="transport") rTransport();
+}
+document.querySelectorAll(".tb").forEach(btn=>btn.addEventListener("click",()=>sTab(btn.dataset.tab)));
+
+// ── INIT ──────────────────────────────────────────────────────────────────────
+rDays();rNbhList();rPhrases();rChecklist();
+</script>
+</body>
+</html>
